@@ -3,6 +3,6 @@
 ### Univariate
 ### MultiVariate
 
-## [K- Nearest Neighbour Classification](https://github.com/pskaranth/datascience/KNN.md)
+## [K- Nearest Neighbour Classification](https://pskaranth.github.io/thelearningcurve/KNN)
 
 
