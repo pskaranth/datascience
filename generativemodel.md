@@ -2,4 +2,5 @@
 ## Generative modelling
 
 formula $$\forall x \in R$$ like this one
-fractions like this $$\frac{2}{3}
+
+fractions like this $$\frac{2}{3}$$
