@@ -2,7 +2,7 @@
 
 ## K- Nearest Neighbour
 
-### Projects 
+### Project
 - Identifying digits using MNIST data set - [KNN_MNIST](https://github.com/pskaranth/thelearningcurve/tree/master/Classification/KNN)
 
 To classify a new point:
