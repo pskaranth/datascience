@@ -22,7 +22,7 @@ For example in the below diagram, when K =3, it's three closest images are found
 There are 2 points from class A and 1 from class B. Since the most frequent occuring label is 'A', we classify this point as 'A'.
 When K=5, based on five closest images and the most frequently occuring label; it is classified as 'B'.
  
- <img src="img/KNN.png" width="500px" height="500px"> 
+ <img src="img/KNN.png" width="500px" height="400px"> 
 
 How do we set K?
 In order to set the K properly, we use Cross Validation technique.
