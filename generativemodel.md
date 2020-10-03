@@ -1,4 +1,10 @@
 {% include lib/mathjax.html %}
+$$\frac{2} {3}$$
+
+ P(y=j/x)= $$\frac{2} {3}$$
+ P(y=j/x)= $$\frac{(2)} {(3)}$$
+ P(y=j/x)= $$\frac{(2)1} {3(3)}$$
+ 
 # Generative Modeling
 
 There are two kinds of modelling in machine learning.
