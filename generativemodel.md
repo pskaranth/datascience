@@ -2,8 +2,12 @@
 $$\frac{2} {3}$$
 
  P(y=j/x)= $$\frac{2} {3}$$
+ 
  P(y=j/x)= $$\frac{(2)} {(3)}$$
+ 
  P(y=j/x)= $$\frac{(2)1} {3(3)}$$
+ 
+ P(y=j/x)= $$\frac{P(y=j)P(x/y=j)} {P(x)}$$
  
 # Generative Modeling
 
