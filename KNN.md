@@ -5,6 +5,10 @@
 
 To classify a new point:
  - Find the k nearest neighbors in the training set using a distance metric. The commonly used distance metric is Euclidean distance.
+   For two vectors $x, y \in \mathbb{R}^d$, their Euclidean distance is defined as 
+$$\|x - y\| = \sqrt{\sum_{i=1}^d (x_i - y_i)^2}.$$
+   Often we omit the square root, and simply compute _squared Euclidean distance_:
+$$\|x - y\|^2 = \sum_{i=1}^d (x_i - y_i)^2.$$
  - Return the most frequently occuring label amongst the k nearest points.
 
 How do we set K?
