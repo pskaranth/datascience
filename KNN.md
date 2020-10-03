@@ -1,3 +1,5 @@
+{% include lib/mathjax.html %}
+
 ## K- Nearest Neighbour
 
 ### Projects 
