@@ -1,6 +1,9 @@
 {% include lib/mathjax.html %}
  
 # Generative Modeling
+### Project
+- Seed classification - [Seed_generative](https://github.com/pskaranth/thelearningcurve/tree/master/Classification/generative)
+
 
 There are two kinds of modelling in machine learning.
 For the below explanations, consider x = features and y = labels or classes.
@@ -21,7 +24,7 @@ $$ P(y=j/x)= \frac{P(y=j)P(x/y=j)} {P(x)}$$
 Since P(x) is not dependent on j, the denominator can be excluded. We will pick the label which maximises the above equation.
 Maximising the equation would also mean we are closer to the mean where density is high.
 
-### Steps to follow when predicint using Gaussian Generative Modeling:
+### Steps to follow when predicting using Gaussian Generative Modeling:
 
 For each class j:
 * Find the probability of that class (P(y=j))
