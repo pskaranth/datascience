@@ -1,13 +1,4 @@
 {% include lib/mathjax.html %}
-$$\frac{2} {3}$$
-
- P(y=j/x)= $$\frac{2} {3}$$
- 
- P(y=j/x)= $$\frac{(2)} {(3)}$$
- 
- P(y=j/x)= $$\frac{(2)1} {3(3)}$$
- 
- P(y=j/x)= $$\frac{P(y=j)P(x/y=j)} {P(x)}$$
  
 # Generative Modeling
 
@@ -24,11 +15,8 @@ Why do we pick y with the largest joint distribution?
 
 This is because of the direct consequence of Bayes’ rule. Based on this rule, we pick a label which is most likely to occur with given x inputs.
 Probability that the label is j given x is given by 
-{% include lib/mathjax.html %}
-P(y=j/x)= $$\frac{P(y=j)P(x/y=j)} {P(x)}$$
 
-                                                 P(y=j/x)= $$\frac{P(y=j)P(x/y=j)} {P(x)}$$
-
+$$ P(y=j/x)= \frac{P(y=j)P(x/y=j)} {P(x)}$$
                                        
 Since P(x) is not dependent on j, the denominator can be excluded. We will pick the label which maximises the above equation.
 Maximising the equation would also mean we are closer to the mean where density is high.
