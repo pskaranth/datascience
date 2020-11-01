@@ -14,8 +14,8 @@ Predicting y based on x by learning a function that takes input as x and outputs
 ### Generative Modeling:
 To get an idea how the data is generated, and learn a function that gives a score to the configuration determined by x and y together.
 For any new point x, output y is predicted based on the label which has the largest joint distribution.
-Why do we pick y with the largest joint distribution?
 
+Why do we pick y with the largest joint distribution?
 This is because of the direct consequence of Bayes’ rule. Based on this rule, we pick a label which is most likely to occur with given x inputs.
 Probability that the label is j given x is given by 
 
