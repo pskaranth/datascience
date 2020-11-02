@@ -7,7 +7,7 @@ The variance of a random variable X, with mean $$EX=μ_{x}$$
 is defined as  
 $$Var(X)=E[(X−μ_{x})^{2}]$$
 Larger the variance, the distribution of data is higher.
-<p align="center"><img src="img/variance.png" width="300px" height="240px"></p>
+<p align="center"><img src="img/variance.PNG" width="300px" height="240px"></p>
 
 ## Covariance
 It gives the relationship between two variables X and Y. It tells us how the data is spread relative to each other.
@@ -23,7 +23,7 @@ Pearson’s coeff $$ρ(x,y)= Cov(X,Y)/σ_{x}σ_{y}$$
 Positive correlation occurs when variables move in the same direction; if one variable increases the other variable also increases.
 When one variable increases and the other decreases, then there is negative correlation.
 
-<p align="center"><img src="img/covar.png" width="300px" height="240px"></p>
+<p align="center"><img src="img/covar.PNG" width="300px" height="240px"></p>
 
 ## Covariance matrix 
 It is a square matrix  indicating the covariance between each pair of elements of vector. Diagonal elements consist of variances, and off diagonal elements will have covariances.
