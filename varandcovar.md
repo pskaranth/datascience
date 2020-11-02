@@ -23,7 +23,7 @@ Pearson’s coeff $$ρ(x,y)= Cov(X,Y)/σ_{x}σ_{y}$$
 Positive correlation occurs when variables move in the same direction; if one variable increases the other variable also increases.
 When one variable increases and the other decreases, then there is negative correlation.
 
-<p align="center"><img src="img/covar.PNG" width="300px" height="240px"></p>
+<p align="center"><img src="img/covar.PNG" width="600px" height="240px"></p>
 
 ## Covariance matrix 
 It is a square matrix  indicating the covariance between each pair of elements of vector. Diagonal elements consist of variances, and off diagonal elements will have covariances.
