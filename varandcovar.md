@@ -1,6 +1,5 @@
 {% include lib/mathjax.html %}
 
-Listing basic terminologies of Statistics required for Machine Learning.
 ## Variance
 It is the measure of the spread of the data around it’s mean value. 
 The variance of a random variable X, with mean $$EX=μ_{x}$$
