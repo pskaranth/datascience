@@ -5,6 +5,13 @@ This is a simplest algorithm which can be used to solve both classification and 
 - In _KNN Classification_,a data point is classified based on its nearest neighbors.
 - In _KNN Regression_, average of nearest neighbors is calculated and an ouput value is generated.
 
+Considering KNN classification algorithm for our further analysis below.
+
+In the below diagram, when K =3, it's three closest images are found.
+There are 2 points from class A and 1 from class B. Since the most frequent occuring label is 'A', we classify this point as 'A'.
+When K=5, based on five closest images and the most frequently occuring label; it is classified as 'B'.
+ <p align="center"><img src="img/KNN.png" width="300px" height="240px"></p>
+
 Steps used to classify a new point in _KNN Classification_:
  - Find the k nearest neighbors in the training set using a distance metric. The commonly used distance metric is Euclidean distance.
  
@@ -18,11 +25,6 @@ Steps used to classify a new point in _KNN Classification_:
 
  - Return the most frequently occuring label amongst the k nearest points.
  
-For example in the below diagram, when K =3, it's three closest images are found.
-There are 2 points from class A and 1 from class B. Since the most frequent occuring label is 'A', we classify this point as 'A'.
-When K=5, based on five closest images and the most frequently occuring label; it is classified as 'B'.
- <p align="center"><img src="img/KNN.png" width="300px" height="240px"></p>
-
 How do we set K?
 In order to set the K properly, we use Cross Validation technique.
 
