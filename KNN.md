@@ -15,11 +15,11 @@ When K=5, based on five closest images and the most frequently occuring label; i
 Steps used to classify a new point in _KNN Classification_:
  - Find the k nearest neighbors in the training set using a distance metric. The commonly used distance metric is Euclidean distance.
  
-   For two vectors $$x, y \in \mathbb{R}^d$$, their Euclidean distance is defined as 
+   For two vectors $$x, y \in \mathbb{R}^d$$, their Euclidean distance is defined as:
    
    $$\|x - y\| = \sqrt{\sum_{i=1}^d (x_i - y_i)^2}.$$
 
-  We omit the square root, and simply compute _squared Euclidean distance_:
+   We omit the square root, and simply compute _squared Euclidean distance_:
    
    $$\|x - y\|^2 = \sum_{i=1}^d (x_i - y_i)^2.$$
 
