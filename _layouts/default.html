@@ -1,8 +1,18 @@
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
- <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--   <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>-->
+ <!--   [if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -73,10 +83,63 @@ body {
   .sidenav a {font-size: 18px;}
 }
 </style>
-</head>
-<body>
+  </head>
+  <body>
 
-<div class="sidenav">
+      <header>
+        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% if site.show_downloads %}
+          <div class="downloads">
+            <span>Downloads:</span>
+            <ul>
+              <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
+              <li><a href="{{ site.github.tar_url }}" class="button">TAR</a></li>
+            </ul>
+          </div>
+        {% endif %}
+      </div><!-- end banner -->
+
+  <!--  <div class="wrapper">
+      <nav>
+         <ul>
+            <li><a href="https://pskaranth.github.io/thelearningcurve/probandstatistics" class="button" onclick="myFunction()"><b>Probability and Statistics</b></a></li>    
+           <ul>
+             <div id="myDIV">
+             <li><a href="https://pskaranth.github.io/thelearningcurve/varandcovar" class="button">Variance and Covariance</a></li>  
+             </div>
+           </ul>
+              <li><a href="https://pskaranth.github.io/thelearningcurve/classification" class="button" onclick="myFunctionClass()"><b>Classification Algorithms</b></a></li> 
+           <ul>
+            <div id="myClass">              
+              <li><a href="https://pskaranth.github.io/thelearningcurve/generativemodel" class="button">Generative Model</a></li> 
+              <li><a href="https://pskaranth.github.io/thelearningcurve/KNN" class="button">KNN</a></li> 
+              </div>
+           </ul>
+            </ul>
+      
+    
+        </nav>
+      <section>
+        {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme:The Leap day</a></small></p>
+      </footer>
+    </div>
+-->
+   <div class="wrapper">
+   <div class="sidenav">
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#clients">Clients</a>
@@ -85,40 +148,45 @@ body {
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-   <a href="https://pskaranth.github.io/thelearningcurve/generativemodel" class="button">Generative Model</a>
+  <a href="https://pskaranth.github.io/thelearningcurve/generativemodel" class="button">Generative Model</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
   <a href="#contact">Search</a>
 </div>
- <section>
+    <section>
         {{ content }}
 
-</section>
-<!--<div class="main">
-  <h2>Sidebar Dropdown</h2>
-  <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
-  <p>This sidebar is of full height (100%) and always shown.</p>
-  <p>Some random text..</p>
-</div>
--->
+      </section>
+   </div>
 
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+       
+   function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } else {
-  dropdownContent.style.display = "block";
+    x.style.display = "none";
   }
-  });
 }
-</script>
-</body>
+  function myFunctionClass() {
+  var x = document.getElementById("myClass");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+      </script>
+    {% endif %}
+  </body>
 </html>
