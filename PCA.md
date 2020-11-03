@@ -38,16 +38,17 @@ Thus variance given by $$u^{T}Σu$$ should be maximised such that only highest v
 By introducing a new variable, Lagrange multiplier $$\lambda$$ and adding constraint in the equation ($$u.u^{T} = 1 $$) , we get:
 
 $$
-L(u,/lambda) = /sigma_{2}- /lambda(u.u^{T}-1)\\
-/frac{dL}{d/lambda} = u.u^{T}-1\\
-/frac{dL}{du} = 2 Σ u - 2/lambda.u\\
+L(u,\lambda) = /sigma_{2}- \lambda(u.u^{T}-1)\\
+\frac{dL}{d\lambda} = u.u^{T}-1\\
+\frac{dL}{du} = 2 Σ u - 2\lambda.u\\
+$$
 
-Setting the derivatives to zero for maximising;
+Setting the derivatives to zero for maximising:
 $$
 u.u^{T} = 1\\
-M.u = /lambda.w\\
+M.u = \lambda.w\\
 $$
 
-Desired vector u is an Eigen vector of the covariance matrix M and the maximising vector will be associated with largest Eigen value $$/lambda$$
+Desired vector u is an Eigen vector of the covariance matrix M and the maximising vector will be associated with largest Eigen value $$\lambda$$
 
 
