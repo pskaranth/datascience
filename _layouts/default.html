@@ -20,8 +20,8 @@ body {
 
 /* Fixed sidenav, full height */
 .sidenav {
-  height: 70%;
-  width: 200px;
+  height: 80%;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -159,8 +159,25 @@ body {
 
       </section>
    </div>
+    <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
-    {% if site.google_analytics %}
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+ <!--   {% if site.google_analytics %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -187,6 +204,6 @@ body {
 }
 
       </script>
-    {% endif %}
+    {% endif %}-->
   </body>
 </html>
