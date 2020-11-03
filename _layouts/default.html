@@ -89,10 +89,18 @@ body {
   padding-right: 8px;
 }
 
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
 }
 </style>
 </head>
@@ -104,17 +112,19 @@ body {
 </div>
 <div class="row">
 <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-  <button class="dropdown-btn">Dropdown 
+  <a href="#about">About</a>  
+  <button class="dropdown-btn">Probability and Statistics 
+    <i class="fa fa-caret-down"></i>
+  </button>
+      <div class="dropdown-container">
+    <a href="https://pskaranth.github.io/thelearningcurve/varandcovar" class="button">Variance and Covariance</a>
+  </div>
+  <button class="dropdown-btn">Classification Algorithms
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="https://pskaranth.github.io/thelearningcurve/generativemodel" class="button">Generative Model</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="https://pskaranth.github.io/thelearningcurve/KNN" class="button">K Nearest Neighbor</a>
   </div>
   <a href="#contact">Search</a>
 </div>
