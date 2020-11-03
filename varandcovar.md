@@ -38,6 +38,11 @@ The covariance matrix is symmetric and positive semi definite.
 Covariance matrix denoted by Σ is defined by:
 $$Cov(X)=E(XX^{T})−μμ^{T}$$ 
 
+$$$$Cov(X) = \left( \begin{array}{ccc}
+             \sigma_{11} & \sigma_{12} \\
+             \sigma_{21} & \sigma_{22}
+              \end{array} \right)$$
+
 If mean is zero,then: 
 $$Cov(X)=XX^{T}/n$$
 
