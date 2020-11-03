@@ -23,11 +23,12 @@ Variance of  x in the direction u is given by $$Σ(x.u)^{2}$$
 $$Var = Σ(x.u)^{2}$$
 
 In matrix form this is given as: 
+
 $$
 = \frac{(xu)^{T}(xu)}{n}\\
 = \frac{u^{T}x^{T}xu}{n} \\ 
 = u^{T}\frac{x^{T}x}{n} u \\
-= u^{T} Σ u \\
+= u^{T} Σ u , where  Σ is the covariance matrix considering mean is zero \\ 
 $$
 
 Thus variance is given by $$u^{T}Σu$$
