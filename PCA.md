@@ -28,8 +28,11 @@ $$
 = \frac{(xu)^{T}(xu)}{n}\\
 = \frac{u^{T}x^{T}xu}{n} \\ 
 = u^{T}\frac{x^{T}x}{n} u \\
-= u^{T} Σ u , where  Σ is the covariance matrix considering mean is zero \\ 
+= u^{T} Σ u \\
 $$
 
+where  Σ is the covariance matrix %%\frac{x^{T}x}{n} $$considering mean is zero 
+
 Thus variance is given by $$u^{T}Σu$$
+
 
