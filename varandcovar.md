@@ -5,9 +5,10 @@ It is the measure of the spread of the data around it’s mean value.
 The variance of a random variable X, with mean $$EX=μ_{x}$$
 is defined as  
 $$Var(X)=E[(X−μ_{x})^{2}]$$
+
 Larger the variance, the distribution of data is higher.
 
-The data points denoted by red has higher variance than the oints denoted by blue as the data is more spread around the mean.
+The data points denoted by red has higher variance than the one denoted by blue as the data is more spread around the mean.
 <p align="center"><img src="img/variance.PNG" width="300px" height="240px"></p>
 
 ## Covariance
