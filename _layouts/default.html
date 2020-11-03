@@ -21,14 +21,14 @@ body {
 /* Fixed sidenav, full height */
 .sidenav {
   height: 80%;
-  width: 300px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 50px;
+  padding-top: 200px;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -138,7 +138,7 @@ body {
       </footer>
     </div>
 -->
-   <div class="wrapper">
+ 
    <div class="sidenav">
   <a href="#about">About</a>
   <a href="#services">Services</a>
@@ -154,11 +154,10 @@ body {
   </div>
   <a href="#contact">Search</a>
 </div>
-    <section>
+  <div class="main">
         {{ content }}
+</div>
 
-      </section>
-   </div>
     <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
