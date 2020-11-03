@@ -23,7 +23,7 @@ $$Cov(X,Y) = E(XY)$$
 
 By normalising the covariance, we get Correlation Coefficient given by :
 
-Pearson’s coeff $$ρ(x,y)= \frac{Cov(X,Y)}{sigma_{x}sigma_{y}}$$
+Pearson’s coeff $$ρ(x,y)= \frac{Cov(X,Y)}{\sigma_{x}\sigma_{y}}$$
 
 Positive correlation occurs when variables move in the same direction; if one variable increases the other variable also increases.
 
@@ -49,6 +49,6 @@ $$
               \end{array} \right)
               \end{aligned}$$
               
-where $$Sigma_{ii} indicates variance and $$Sigma_{ij} indicates covariance.
+where $$\Sigma_{ii}$$ indicates variance and $$\Sigma_{ij}$$ indicates covariance.
 
 
