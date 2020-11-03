@@ -25,7 +25,7 @@ $$Var = Σ(x.u)^{2}$$
 In matrix form this is given as: 
 
 $$
-/sigma^{2} = \frac{(xu)^{T}(xu)}{n}\\
+\sigma^{2} = \frac{(xu)^{T}(xu)}{n}\\
     = \frac{u^{T}x^{T}xu}{n}\\ 
     = u^{T}\frac{x^{T}x}{n} u\\
     = u^{T} Σ u\\
@@ -38,7 +38,7 @@ Thus variance given by $$u^{T}Σu$$ should be maximised such that only highest v
 By introducing a new variable, Lagrange multiplier $$\lambda$$ and adding constraint in the equation ($$u.u^{T} = 1 $$) , we get:
 
 $$
-L(u,\lambda) = /sigma_{2}- \lambda(u.u^{T}-1)\\
+L(u,\lambda) = \sigma^{2}- \lambda(u.u^{T}-1)\\
 \frac{dL}{d\lambda} = u.u^{T}-1\\
 \frac{dL}{du} = 2 Σ u - 2\lambda.u\\
 $$
