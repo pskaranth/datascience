@@ -36,7 +36,7 @@ It is a square matrix  indicating the covariance between each pair of elements o
 The covariance matrix is symmetric and positive semi definite.
 
 Covariance matrix denoted by Σ is defined by:
-$$Cov(X)=E(XX^{T})−μμ^{T}$$ \\
+$$Cov(X)=E(XX^{T})−μμ^{T}$$ 
 
 If mean is zero,then: 
 $$Cov(X)=XX^{T}/n$$
