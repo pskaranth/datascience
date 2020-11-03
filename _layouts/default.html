@@ -58,25 +58,15 @@ body {
   color: black;
 }
 
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
+
 sidenav {
   height: 100%;
   width: 200px;
+ -ms-flex: 30%; /* IE10 */
+  flex: 30%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -105,12 +95,14 @@ sidenav {
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
 }
-/* Main column */
-.main {   
+
+  /* Main content */
+.main {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: white;
-  padding: 20px;
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
 }
 
 /* Fake image, just for this example */
@@ -171,12 +163,12 @@ sidenav {
     <a href="#">Link 3</a>
   </div>
   <a href="#contact">Search</a>
-</div>
+
        <section>
         {{ content }}
 
       </section>
-
+</div>
 
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
