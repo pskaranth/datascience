@@ -39,16 +39,18 @@
     <div class="wrapper">
       <nav>
          <ul>
-            <li><a href="https://pskaranth.github.io/thelearningcurve/probandstatistics" class="button" onclick="myFunction()">Probability and Statistics</a></li>             
-              <li><a href="https://pskaranth.github.io/thelearningcurve/classification" class="button"><b>Classification Algorithms</b></a></li> 
+            <li><a href="https://pskaranth.github.io/thelearningcurve/probandstatistics" class="button" onclick="myFunction()">Probability and Statistics</a></li>    
+             <div id="myDIV">
+             <li><a href="https://pskaranth.github.io/thelearningcurve/varandcovar" class="button">Variance and Covariance</a></li>  
+             </div>
+              <li><a href="https://pskaranth.github.io/thelearningcurve/classification" class="button" onclick="myFunctionClass()"><b>Classification Algorithms</b></a></li> 
+            <div id="myClass">
               <li><a href="https://pskaranth.github.io/thelearningcurve/generativemodel" class="button">Generative Model</a></li> 
               <li><a href="https://pskaranth.github.io/thelearningcurve/KNN" class="button">KNN</a></li> 
-             
+              </div>
             </ul>
       
-      <div id="myDIV">
-      <li><a href="https://pskaranth.github.io/thelearningcurve/varandcovar" class="button">Variance and Covariance</a></li>  
-     </div>
+    
         </nav>
       <section>
         {{ content }}
@@ -73,6 +75,14 @@
        
    function myFunction() {
   var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  function myFunctionClass() {
+  var x = document.getElementById("myClass");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
