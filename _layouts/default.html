@@ -57,6 +57,13 @@ body {
   background-color: #ddd;
   color: black;
 }
+  
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
 
 
 /* Create two unequal columns that sits next to each other */
@@ -78,7 +85,7 @@ sidenav {
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   color: #818181;
   display: block;
   border: none;
@@ -96,11 +103,11 @@ sidenav {
 
   /* Main content */
 .main {
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
  /*  margin-left: 200px; Same as the width of the sidenav */
   font-size: 15px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+ 
 }
 
 /* Fake image, just for this example */
@@ -146,7 +153,7 @@ sidenav {
   <a href="#">Link</a>
   <a href="#" class="right">Link</a>
 </div> 
- 
+ <div class="row">
 <div class="sidenav">
   <a href="#about">About</a>
   <a href="#services">Services</a>
@@ -156,18 +163,19 @@ sidenav {
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-    <a href="https://pskaranth.github.io/thelearningcurve/generativemodel" class="button">Generative Model</a>
+    <a href="https://pskaranth.github.io/thelearningcurve/generativemodel" class="button">Generative Mode</a>
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
   <a href="#contact">Search</a>
   </div>
+    <div class="main">
        <section>
         {{ content }}
 
       </section>
-
-
+   </div>
+  </div>
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
