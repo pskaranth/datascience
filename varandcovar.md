@@ -36,17 +36,19 @@ It is a square matrix  indicating the covariance between each pair of elements o
 The covariance matrix is symmetric and positive semi definite.
 
 Covariance matrix denoted by Σ is defined by:
-$$Cov(X)=E(XX^{T})−μμ^{T}$$ 
-$$
-\begin{aligned}
-& Cov(X) = \left( \begin{array}{cc}
-             \sigma_{11} & \sigma_{12} \\
-             \sigma_{21} & \sigma_{22}
-              \end{array} \right)
-              \end{aligned}$$
+$$Cov(X)=E(XX^{T})−μμ^{T}$$ \\
 
 If mean is zero,then: 
 $$Cov(X)=XX^{T}/n$$
 
+$$
+\begin{aligned}
+& Cov(X) = \left( \begin{array}{cc}
+             \Sigma_{11} & \Sigma_{12} \\
+             \Sigma_{21} & \Sigma_{22}
+              \end{array} \right)
+              \end{aligned}$$
+              
+where $$Sigma_{ii} indicates variance and $$Sigma_{ij} indicates covariance.
 
 
