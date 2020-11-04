@@ -78,7 +78,7 @@ $$
 
 $$U^{T}$$ is a basis change matrix which converts from regular co-ordinate basis to the basis of Eigen vectors.
 
-$$\Lambda is the scaling factor.
+$$\Lambda$$ is the scaling factor.
 
 Multiplying by U sends it back to the co-oridnate axis.
 
