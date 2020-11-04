@@ -39,7 +39,7 @@ where  Σ is the covariance matrix $$\frac{x^{T}x}{n} $$ considering mean is zer
 
 Thus variance given by $$u^{T}Σu$$ should be maximised such that only highest variance is considered.
 
-By introducing a new variable, Lagrange multiplier $$\lambda$$ and adding constraint in the equation ($$u.u^{T} = 1 $$) , we get:
+By introducing a new variable, Lagrange multiplier $$\lambda$$ and adding constraint in the equation ($$uu^{T} = 1 $$) , we get:
 
 $$
 L(u,\lambda) = \sigma^{2}- \lambda(u u^{T}-1)\\
@@ -51,7 +51,7 @@ Setting the derivatives to zero for maximising:
 
 $$
 u u^{T} = 1\\
-M u = \lambda w\\
+M u = \lambda u\\
 $$
 
 Desired vector u is an Eigen vector of the covariance matrix M and the maximising vector will be associated with largest Eigen value $$\lambda$$.
@@ -65,14 +65,21 @@ This projections is called the _Principal Component Analysis._
 ## Reconstruction
 
 Suppose we have to  reduce the dimension from 784 to 100, we pick the first 100 Eigen vectors(U) and project it - which is given by $$U^{T}x$$
+
 This component should be multiplied by U in original dimension to get the reconstructed image in 784 dimension.
 
 ## Spectral Decomposition
 
-Suppose M is a symmetric matrix, then M has orthonormal vectors $$ u_{1},u_{2} \in \mathbb{R}^d$$ and corresponding Eigen values $$\lambda_{1}, \lambda_{2}..
+Suppose M is a symmetric matrix, then M has orthonormal vectors $$ u_{1},u_{2} \in \mathbb{R}^d$$ and corresponding Eigen values $$\lambda_{1}, \lambda_{2}..$$
 
 $$
 Mx = U \Lambda U^{T}x
 $$
+
+$$U^{T}$$ is a basis change matrix which converts from regular co-ordinate basis to the basis of Eigen vectors.
+
+$$\Lambda is the scaling factor.
+
+Multiplying by U sends it back to the co-oridnate axis.
 
 
