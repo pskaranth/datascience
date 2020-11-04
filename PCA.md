@@ -14,9 +14,10 @@ Projections which have the largest variance is the first principal component, se
 
 Consider a 2 dimensional data set below with $$x_{1}$$ and $$x_{2}$$ features. The goal is to reduce the dimension from 2D to 1 D.
 We project points onto the line by finding the closest points on the line. We replace the point by the length of the line(projection).
-<p align="center"><img src="img/KNN.png" width="300px" height="240px"></p>
+<p align="center"><img src="img/PCA.png" width="300px" height="240px"></p>
 The 2D points are replaced by the length of line shown in blue. The direction of the line is the direction of the _maximum variance_.
 
+Mathematically this can be explained below.
 Projection of x onto unit vector u is given by 
 $$x.u = u.x = u^{T}x $$
 
@@ -41,16 +42,24 @@ By introducing a new variable, Lagrange multiplier $$\lambda$$ and adding constr
 
 $$
 L(u,\lambda) = \sigma^{2}- \lambda(u.u^{T}-1)\\
-\frac{dL}{d\lambda} = u.u^{T}-1\\
-\frac{dL}{du} = 2 Σ u - 2\lambda.u\\
+\frac{dL}{d\lambda} = u u^{T}-1\\
+\frac{dL}{du} = 2 Σ u - 2\lambda u\\
 $$
 
 Setting the derivatives to zero for maximising:
 $$
-u.u^{T} = 1\\
-M.u = \lambda.w\\
+u u^{T} = 1\\
+M u = \lambda w\\
 $$
 
-Desired vector u is an Eigen vector of the covariance matrix M and the maximising vector will be associated with largest Eigen value $$\lambda$$
+Desired vector u is an Eigen vector of the covariance matrix M and the maximising vector will be associated with largest Eigen value $$\lambda$$.
+Suppose we want to map $$X  \in \mathbb{R}^d$$ to just _k_ dimensions, while capturing as much as variance of X as possible, the best projection is
+
+$$ X ->(u_{1}.x,u_{2}.x,...,u_{k}.x) $$
+ 
+where $$u_{i} are the Eigen vectors
+This projections is called the _Principal Component Analysis._
+
+
 
 
