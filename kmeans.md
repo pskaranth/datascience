@@ -23,20 +23,21 @@ The last 2 steps are repeated until it converges to a  local optimum.
 With k means, different initialisation might end up in different clusters. To avoid this, one of the tricks is to have extra _k_ clusters and once the algorithm converges prune the extra k centers which are either very far or very few points assigned to the centers.
 
 A better initialisation method called _K means++_ can be used to achieve better results of the clusters:
-- In this, a random data point x is chosen as center given by $$\mu_{1}$$
+- In this; a random data point x is chosen as center given by $$\mu_{1}$$
 - To pick the next center $$\mu_{2}$$ , a point that is farthest to the first $$\mu_{1}$$ is chosen.The probability of picking a point x is proportional to the distance from x     to the center  $$\mu_{1}$$ squared.
 
-  $$ P(x) \propto (x-mu_{k})^{2} $$
+  $$ P(x) \propto (x-\mu_{k})^{2} $$
   
  - Next center $$\mu_{3}$$ is picked based on the farthest distance to both $$\mu_{1}$$ and $$\mu_{2}$$.
  
 For larger data sets, another initialisation method called _Sequential K-means_ can be considered:
-- In this, centers $$\mu_{1}$$, $$\mu_{2}$$ ,..,$$\mu_{k}$$ are chosen randomly.
+- In this; centers $$\mu_{1}$$, $$\mu_{2}$$ ,..,$$\mu_{k}$$ are chosen randomly.
 - Counts of each centers are set to $$n_{1}$$, $$n_{2}$$ ,..,$$n_{k}$$ = 1.
 - Get the next point x and let $$\mu_{j}$$ be the closest center to x.
 - Update $$\mu_{j}$$ and $$n_{j}$$ given by
 
-$$\mu_{j} = \frac{n_{j}mu_{j}+ x}{n_{j}+1}$$
-$$n_{j}$$ = n_{j} + 1 $$
+$$\mu_{j} = \frac{n_{j}\mu_{j}+ x}{n_{j}+1}$$
+
+$$n_{j} = n_{j} + 1 $$
 
 
