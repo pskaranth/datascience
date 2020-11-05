@@ -20,8 +20,6 @@ Applications include _Recommendation Engines, Image Segmentation_.
 
 The last 2 steps are repeated until it converges to a  local optimum.
 
-<div style="width:100%;height:0;padding-bottom:42%;position:relative;"><iframe src="https://giphy.com/embed/gDcfQUff9v6YdAttKp" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/gDcfQUff9v6YdAttKp">via GIPHY</a></p>
-
 ## K means Initialisation
 With k means, different initialisation might end up in different clusters. To avoid this, one of the tricks is to have extra _k_ clusters and once the algorithm converges prune the extra k centers which are either very far or very few points assigned to the centers.
 
