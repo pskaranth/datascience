@@ -9,13 +9,14 @@ Applications include _Recommendation Engines, Image Segmentation_.
 
 - Decide how many clusters are needed which is given by _k_.
 - $$\mu_{1} , \mu_{2}$$ centers are randomly initialised.
-- Each point is assigned to it's closest cluster center.
+- Repeat until convergence:
+    - Each point is assigned to it's closest cluster center.
 
-  The closest cluster center is obtained by considering the minimum average squared distance between points and their nearest representatives:
+      The closest cluster center is obtained by considering the minimum average squared distance between points and their nearest representatives:
   
-  $$cost(\mu_{1} ,.., \mu_{k}) = \sum_{i=1}^nmin||x_{i}-\mu_{k}||^{2} $$
+      $$cost(\mu_{1} ,.., \mu_{k}) = \sum_{i=1}^nmin||x_{i}-\mu_{k}||^{2} $$
   
-- Each $$\mu_{j}$$ is updated with the mean of the points assigned to it.
+    - Each $$\mu_{j}$$ is updated with the mean of the points assigned to it.
 
 The last 2 steps are repeated until it converges to a  local optimum.
 
