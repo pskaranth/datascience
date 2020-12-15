@@ -2,9 +2,9 @@
 ## Expectation
 The expected value is the _average_ of all values that a discrete random variable X can have. It is also the mean of all the values of X and is denoted by _E(X)_.
 
-Let X be a variable with values x_{1},x_{2},... with each of it's probabilities p_{i}.
+Let X be a variable with values $$x_{1},x_{2},...$$ with each of it's probabilities $$p_{i}$$.
 
-Then Expectation of variable is given by $$E(X) = sum_{i=1}^nP(i).x_{i})$$
+Then Expectation of variable is given by $$E(X) = \sum_{i=1}^nP(i).x_{i})$$
 
 ## Variance
 It is the measure of the spread of the data around it’s mean value. 
