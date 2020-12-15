@@ -31,7 +31,7 @@ The covariance between X and Y is defined as:
 
 $$
 \begin{aligned}
-Cov(X,Y)=E[(X−E(X))(Y−E(Y))]=E[(X−μ_{x})(Y−μ_{y})]
+Cov(X,Y)=E[(X−E(X))(Y−E(Y))]=E[(X−μ_{x})(Y−μ_{y})] \\
         =E[XY]−(E(X))(E(Y))=E[XY]−μ_{x}μ_{y}   
 \end{aligned}
 $$
