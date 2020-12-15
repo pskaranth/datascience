@@ -28,8 +28,13 @@ It is a measure of how far the data is spread. It is measured by the squared roo
 It gives the relationship between two variables X and Y. It tells us how the data is spread relative to each other.
 
 The covariance between X and Y is defined as:
-$$Cov(X,Y)=E[(X−E(X))(Y−E(Y))]=E[XY]−(E(X))(E(Y))$$
-$$Cov(X,Y)=E[(X−μ_{x})(Y−μ_{y})]=E[XY]−μ_{x}μ_{y}$$
+
+$$
+\begin{aligned}
+Cov(X,Y)=E[(X−E(X))(Y−E(Y))]=E[(X−μ_{x})(Y−μ_{y})]
+        =E[XY]−(E(X))(E(Y))=E[XY]−μ_{x}μ_{y}   
+\end{aligned}
+$$
 
 If they are centered around the mean, then second component is zero. Covariance in this case is given by:
 $$Cov(X,Y) = E(XY)$$
