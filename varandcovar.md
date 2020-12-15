@@ -8,8 +8,12 @@ Then Expectation of variable is given by $$E(X) = \sum_{i=1}^n(P(i).x_{i})$$
 
 ## Variance
 It is the measure of the spread of the data around it’s mean value. 
-The variance of a random variable X, with mean $$E(X)=μ_{x}$$
-is defined as  
+
+Variance is measured by considering the deviation of the random variable X from it's expected value.
+Abosolute difference can then be given by : E(|X-E(X)|) ; Since this is hard to differentiate, this term is squared.
+Hence, the variance of a random variable X, with mean $$E(X)=μ_{x}$$
+can be given by
+
 $$Var(X)=E[(X−μ_{x})^{2}]$$
 
 Larger the variance, the distribution of data is higher.
