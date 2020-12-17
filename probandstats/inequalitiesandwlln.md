@@ -60,9 +60,9 @@ P(|X-\mu_{x}|)\geq a) &= P(|X-\mu_{x}|^{2}>a^{2}) \\
 
 Applying Markov's inequality and replacing $$\mu_{y}$$ with $$\sigma^{2}$$  we get: 
 
-$$$$ \begin{aligned}
+$$ \begin{aligned}
 P(|X-\mu_{x}|)\geq a) &\leq \frac{\mu_{y}}{a^{2}} \\
-		      &\leq\frac{\sigma_{x}^{2}}{a^{2}}
+		      &\leq \frac{\sigma_{x}^{2}}{a^{2}}
 \end{aligned} $$
 
 ## Weak Law of Large Numbers 
