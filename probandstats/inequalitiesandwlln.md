@@ -7,7 +7,7 @@ If average height of Meerkats is 10 inches, can half of Meerkats be greater than
 Then overall average will be 1/2 * 40 = 20 inches which is > 10 (even if rest of the Meerkat's height is zero)
 
 So if any fraction(F) * 40 >10, average would be greater than 10.\\
-To maintain the average at 10, \\
+To maintain the average at 10, \
 
 $$ \begin{aligned}
 F* 40<10 \\
@@ -36,8 +36,8 @@ $$
 \end{aligned}
 $$ 
 
-In Markov's inequality, Probability that any X is $$\alpha$$ times bigger than its mean is atmost $$1/\alpha$$ \\
-In Chebyshev's inequality, Probability that any X is $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ 
+_In Markov's inequality, Probability that any X is $$\alpha$$ times bigger than its mean is atmost $$1/\alpha$$ \\
+In Chebyshev's inequality, Probability that any X is $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ _
 
 ## Chebyshev's Inequality
 
@@ -47,7 +47,7 @@ $$\forall \alpha>=1,  P(|X- \mu|\geq\alpha\sigma ) <= \frac{1}{\alpha^{2}}$$
 This can also be given by
 $$\forall a\geq\sigma , P(|X- \mu|\geq a ) <= \frac{\sigma^{2}}{a^{2}}$$
 
-For any random variable X,\\
+For any random variable X,\
 $$ \mu_{x} = E(X)  ,  \sigma^{2}= V(X) = E(X- \mu_{x})^{2} $$ \\
 
 Let $$ Y = (X- \mu_{x})^{2}  \\
@@ -77,7 +77,7 @@ $$E(\bar{X^{n}}) = E(\frac{\sum(X_{i})}{n})  = \frac{1}{n}\sum(E(X_{i})) =\frac{
 Variance \\
 $$V(\bar{X^{n}}) = V(\frac{\sum(X_{i})}{n})  = \frac{1}{n^{2}}\sum(V(X_{i})) =\frac{1}{n^{2}}\sum(\sigma^{2})=\frac{1}{n}\sum(\sigma^{2}) $$ 
 
-By Chebyshev's inequality,\
+By Chebyshev's inequality,
 
 $$\forall \epsilon>0, P(|\bar{X^{n}}-\mu|\geq\epsilon)\leq \frac{1}{n.\epsilon^{2}}\sum(\sigma^{2}) $$\\
 As $$n \to \infty $$, RHS will be 0.
