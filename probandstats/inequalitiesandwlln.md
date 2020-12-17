@@ -10,10 +10,10 @@ So if any fraction(F) * 40 >10, average would be greater than 10.\\
 To maintain the average at 10, 
 
 $$ \begin{aligned}
-F* 40<10 \\
-F* (4* 10)<10 \\
-F* (4* \mu)<\mu \\
-F_{4.\mu}<1/4 
+F* 40 \leq 10 \\
+F* (4* 10)\leq 10 \\
+F* (4* \mu)\leq \mu \\
+F_{4.\mu}\leq 1/4 
 \end{aligned}
 $$ 
 															
@@ -36,8 +36,8 @@ $$
 \end{aligned}
 $$ 
 
-In Markov's inequality, Probability that any X is $$\alpha$$ times bigger than its mean is atmost_ $$1/\alpha$$ \\
-In Chebyshev's inequality, Probability that any X is_ $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ 
+In Markov's inequality, Probability that any X is $$\alpha$$ times bigger than its mean is atmost $$1/\alpha$$ \\
+In Chebyshev's inequality, Probability that any X is $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ 
 
 ## Chebyshev's Inequality
 
@@ -55,12 +55,15 @@ Y\geq0 , \mu_{y} = E(X- \mu_{x})^{2} = \sigma^{2} $$
 
 $$ \begin{aligned}
 P(|X-\mu_{x}|)\geq a) &= P(|X-\mu_{x}|^{2}>a^{2}) \\
-		      &= P(Y\geq a^{2})\leq \frac{\mu_{y}}{a^{2}} 
+		      &= P(Y\geq a^{2})
 \end{aligned} $$
 
 Applying Markov's inequality and replacing $$\mu_{y}$$ with $$\sigma^{2}$$  we get: 
 
-$$P(|X-\mu_{x}|)\geq a)= \frac{\sigma_{x}^{2}}{a^{2}}$$
+$$$$ \begin{aligned}
+P(|X-\mu_{x}|)\geq a) &\leq \frac{\mu_{y}}{a^{2}} \\
+		      &\leq\frac{\sigma_{x}^{2}}{a^{2}}
+\end{aligned} $$
 
 ## Weak Law of Large Numbers 
 
