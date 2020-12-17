@@ -7,7 +7,7 @@ If average height of Meerkats is 10 inches, can half of Meerkats be greater than
 Then overall average will be 1/2 * 40 = 20 inches which is > 10 (even if rest of the Meerkat's height is zero)
 
 So if any fraction(F) * 40 >10, average would be greater than 10.\\
-To maintain the average at 10, \
+To maintain the average at 10, 
 
 $$ \begin{aligned}
 F* 40<10 \\
@@ -36,8 +36,8 @@ $$
 \end{aligned}
 $$ 
 
-_In Markov's inequality, Probability that any X is $$\alpha$$ times bigger than its mean is atmost $$1/\alpha$$ \\
-In Chebyshev's inequality, Probability that any X is $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ _
+In Markov's inequality, Probability that any X is $$\alpha$$ times bigger than its mean is atmost_ $$1/\alpha$$ \\
+In Chebyshev's inequality, Probability that any X is_ $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ 
 
 ## Chebyshev's Inequality
 
@@ -48,7 +48,7 @@ This can also be given by
 $$\forall a\geq\sigma , P(|X- \mu|\geq a ) <= \frac{\sigma^{2}}{a^{2}}$$
 
 For any random variable X,\
-$$ \mu_{x} = E(X)  ,  \sigma^{2}= V(X) = E(X- \mu_{x})^{2} $$ \\
+$$ \mu_{x} = E(X)  ,  \sigma^{2}= V(X) = E(X- \mu_{x})^{2} $$ 
 
 Let $$ Y = (X- \mu_{x})^{2}  \\
 Y\geq0 , \mu_{y} = E(X- \mu_{x})^{2} = \sigma^{2} $$
@@ -68,7 +68,7 @@ Independent Identically Distributed(iid): Independent random variables with same
 
 Weak Law of large numbers says that "_As size of the sample grows larger, sample mean converges to population mean._"
 
-Consider $$X^{n} = X_{1},X_{2},X_{3}..$$ are iid with mean $$\mu$$ and $$\sigma$$,\
+Consider $$X^{n} = X_{1},X_{2},X_{3}..$$ are iid with mean $$\mu$$ and $$\sigma$$,
 
 Sample mean is given by\\
 $$\bar{X^{n}}= \frac{\sum(X_{i})}{n}$$ \\
@@ -80,6 +80,6 @@ $$V(\bar{X^{n}}) = V(\frac{\sum(X_{i})}{n})  = \frac{1}{n^{2}}\sum(V(X_{i})) =\f
 By Chebyshev's inequality,
 
 $$\forall \epsilon>0, P(|\bar{X^{n}}-\mu|\geq\epsilon)\leq \frac{1}{n.\epsilon^{2}}\sum(\sigma^{2}) $$\\
-As $$n \to \infty $$, RHS will be 0.
+As $$n \to \infty $$, RHS will be 0.\
 $$X^{n}\to\mu $$
 
