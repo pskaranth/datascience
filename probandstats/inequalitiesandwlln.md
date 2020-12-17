@@ -24,7 +24,7 @@ The more direct form is $$  \forall a\geq \mu,  P(X\geq a)\leq\frac{\mu}{a}$$
 
 Proof: 
 
-$$\mu = \sum_{x} x.p(x) \\
+$$\mu = \sum_{x} x.p(x) \
 \geq \sum_{x\geq a}x.p(x)  \\
 \geq \sum_{x\geq a}a.p(x) \\ 
 = a.P(X\geq a) $$ \\
