@@ -8,11 +8,13 @@ Then overall average will be 1/2 * 40 = 20 inches which is > 10 (even if rest of
 
 So if any fraction(F) * 40 >10, average would be greater than 10.\\
 To maintain the average at 10, \\
-$$
-								F* 40<10 \
-								F* (4* 10)<10 \
-								F* (4* \mu)<\mu \
-								F_{4.\mu}<1/4 $$ \\
+$$ \begin{aligned}
+F* 40<10 \\
+F* (4* 10)<10 \\
+F* (4* \mu)<\mu \\
+F_{4.\mu}<1/4 
+\end{aligned}
+$$ 
 															
 Probability that X is bigger than $$4\mu$$ is less than or equal to 1/4 
 
@@ -31,10 +33,10 @@ $$
 & \geq \sum_{x\geq a}a.p(x) \\
 & = a.P(X\geq a) 
 \end{aligned}
-$$ \\
+$$ 
 
 In Markov's inequality, Probability that any X is $$\alpha$$ times bigger than its mean is atmost $$1/\alpha$$ \\
-In Chebyshev's inequality, Probability that any X is $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ \\
+In Chebyshev's inequality, Probability that any X is $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ 
 
 ## Chebyshev's Inequality
 
@@ -47,12 +49,14 @@ $$\forall a\geq\sigma , P(|X- \mu|\geq a ) <= \frac{\sigma^{2}}{a^{2}}$$
 For any random variable X,\\
 $$ \mu_{x} = E(X)  ,  \sigma^{2}= V(X) = E(X- \mu_{x})^{2} $$ \\
 Let $$ Y = (X- \mu_{x})^{2}  , Y\geq0 , \mu_{y} = E(X- \mu_{x})^{2} = \sigma^{2} $$
-$$
-\begin{aligned}
+
+$$ \begin{aligned}
 P(|X-\mu_{x}|)\geq a) &= P(|X-\mu_{x}|^{2}>a^{2}) \\
-		      &= P(Y\geq a^{2})\leq \frac{\mu_{y}}{a^{2}} \\
+		      &= P(Y\geq a^{2})\leq \frac{\mu_{y}}{a^{2}} 
 \end{aligned} $$
-Applying Markov's inequality and replacing $$\mu_{y}$$ with $$\sigma^{2}$$  we get: \\
+
+Applying Markov's inequality and replacing $$\mu_{y}$$ with $$\sigma^{2}$$  we get: 
+
 $$P(|X-\mu_{x}|)\geq a)= \frac{\sigma_{x}^{2}}{a^{2}}$$
 
 ## Weak Law of Large Numbers 
