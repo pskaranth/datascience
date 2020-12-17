@@ -8,6 +8,7 @@ Then overall average will be 1/2 * 40 = 20 inches which is > 10 (even if rest of
 
 So if any fraction(F) * 40 >10, average would be greater than 10.\\
 To maintain the average at 10, \\
+
 $$ \begin{aligned}
 F* 40<10 \\
 F* (4* 10)<10 \\
@@ -48,6 +49,7 @@ $$\forall a\geq\sigma , P(|X- \mu|\geq a ) <= \frac{\sigma^{2}}{a^{2}}$$
 
 For any random variable X,\\
 $$ \mu_{x} = E(X)  ,  \sigma^{2}= V(X) = E(X- \mu_{x})^{2} $$ \\
+
 Let $$ Y = (X- \mu_{x})^{2}  \\
 Y\geq0 , \mu_{y} = E(X- \mu_{x})^{2} = \sigma^{2} $$
 
