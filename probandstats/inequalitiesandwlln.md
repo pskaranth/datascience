@@ -66,7 +66,7 @@ Independent Identically Distributed(iid): Independent random variables with same
 
 Weak Law of large numbers says that "_As size of the sample grows larger, sample mean converges to population mean._"
 
-Condider $$X^{n} = X_{1},X_{2},X_{3}..$$ are iid with mean $$\mu$$ and $$\sigma$$,\\
+Consider $$X^{n} = X_{1},X_{2},X_{3}..$$ are iid with mean $$\mu$$ and $$\sigma$$,\
 
 Sample mean is given by\\
 $$\bar{X^{n}}= \frac{\sum(X_{i})}{n}$$ \\
