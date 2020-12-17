@@ -1,3 +1,4 @@
+{% include lib/mathjax.html %}
 ## Markov's Inequality
  
 Let's look at this example to get the intuition of Markov's inequality.
