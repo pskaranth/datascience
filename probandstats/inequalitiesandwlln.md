@@ -43,11 +43,12 @@ $$\forall a\geq\sigma , P(|X- \mu|\geq a ) <= \frac{\sigma^{2}}{a^{2}}$$
 For any random variable X,\\
 $$ \mu_{x} = E(X)  ,  \sigma^{2}= V(X) = E(X- \mu_{x})^{2} $$ \\
 Let $$ Y = (X- \mu_{x})^{2}  , Y\geq0 , \mu_{y} = E(X- \mu_{x})^{2} = \sigma^{2} $$
-
+\begin{align*}
 $$P(|X-\mu_{x}|)\geq a) = P(|X-\mu_{x}|^{2}>a^{2})$$\\
-$$= P(Y\geq a^{2})\leq \frac{\mu_{y}}{a^{2}}$$ \\
+		      $$= P(Y\geq a^{2})\leq \frac{\mu_{y}}{a^{2}}$$ \\
 Applying Markov's inequality and replacing $$\mu_{y}$$ with $$\sigma^{2} $$ we get: \\
 $$ P(|X-\mu_{x}|)\geq a)= \frac{\sigma_{x}^{2}}{a^{2}}$$
+\end{align*}
 
 ## Weak Law of Large Numbers 
 
