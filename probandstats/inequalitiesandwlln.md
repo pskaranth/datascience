@@ -37,15 +37,17 @@ $$
 $$ 
 
 In Markov's inequality, Probability that any X is $$\alpha$$ times bigger than its mean is atmost $$1/\alpha$$ \\
-In Chebyshev's inequality, Probability that any X is $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ 
 
 ## Chebyshev's Inequality
+In Chebyshev's inequality, Probability that any X is $$\alpha$$ times further away from $$\mu$$ than $$\sigma$$ is $$1/\alpha^{2} $$ 
 
 This is given by :
 $$\forall \alpha>=1,  P(|X- \mu|\geq\alpha\sigma ) <= \frac{1}{\alpha^{2}}$$
 
 This can also be given by
 $$\forall a\geq\sigma , P(|X- \mu|\geq a ) <= \frac{\sigma^{2}}{a^{2}}$$
+
+Proof:
 
 For any random variable X,\
 $$ \mu_{x} = E(X)  ,  \sigma^{2}= V(X) = E(X- \mu_{x})^{2} $$ 
@@ -70,6 +72,8 @@ P(|X-\mu_{x}|)\geq a) &\leq \frac{\mu_{y}}{a^{2}} \\
 Independent Identically Distributed(iid): Independent random variables with same distribution
 
 Weak Law of large numbers says that "_As size of the sample grows larger, sample mean converges to population mean._"
+
+Proof:
 
 Consider $$X^{n} = X_{1},X_{2},X_{3}..$$ are iid with mean $$\mu$$ and $$\sigma$$,
 
