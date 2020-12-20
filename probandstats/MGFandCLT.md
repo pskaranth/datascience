@@ -13,18 +13,18 @@ Variance can be given by \
 One general  method to describe all the moments is by using Moment generating functions, denoted by $$M_{X}$$\
 It maps a random variable X to a function M and is given by , \
 $$M_{X} = E[e^{tX}], t\in R $$\
-$$e^{tX} = (1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$ , by expanding\ 
+$$e^{tX} = (1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$ , by expanding \ 
 so $$E(e^{tX}) = E(1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$\
 $$E(e^{tX}) = (1+E(\frac{t}{1!}X)+E(\frac{t^{2}}{2!}X^{2}))$$
  
-If you need to recover the moments, take a derivative and plug in t =0 \
+If you need to recover the moments, take a derivative and plug in t =0 
 
- $$M^{'}(t)&=\frac{d}{dt} E[e^{tX}]$$, rest is zero as t=0
+ $$M^{'}(t)=\frac{d}{dt} E[e^{tX}]$$, rest is zero as t=0\
  $$\begin{aligned}
 		M^{'}(t) &=\frac{d}{dt} [\sum p(x).e^{tX}] 
-		 &= \sum \frac{d}{dt}p(x).e^{tX}
-		 &= E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})
-		 \end{aligned} $$
+			 &= \sum \frac{d}{dt}p(x).e^{tX}
+			 &= E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})
+\end{aligned} $$
 Thus, $$ M^{'}(0) = E[Xe^{0}] = EX$$\
  Second moment\
  $$M^{"}(t) = \frac{d}{dt}M^{'}(t)=\frac{d}{dt} E(X.e^{tX}) = E[X^{2}.e^{tX}] $$\
@@ -70,16 +70,16 @@ This can be proved using moment generating functions,
   $$M_{Z_{n}}(t) as n \to \infty =  e^\frac{t^{2}}{2}$$\
   We have \
   $$Z_{n}<x = \sum_{i=1}^n\frac{X_{i}}{\sqrt n}$$
- $$ M\frac{X_{i}}{\sqrt n}}(t) = M (\frac{t}{\sqrt n}})$$
-  $$ M_{Z_{n}}(t)= M (\frac{t}{\sqrt n}})^{n}$$
-   Let's show that M $$(\frac{t}{\sqrt n}})^{n}   n \to \infty e^\frac{t^{2}}{2}$$
+ $$ M\frac{X_{i}}{\sqrt n}(t) = M (\frac{t}{\sqrt n})$$
+  $$ M_{Z_{n}}(t)= M (\frac{t}{\sqrt n})^{n}$$
+   Let's show that M $$(\frac{t}{\sqrt n})^{n}   n \to \infty e^\frac{t^{2}}{2}$$
    
-   $$\lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}}) = \frac{t^{2}}{2}$$
+   $$\lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}) = \frac{t^{2}}{2}$$
    
   Substituting $$u = \frac{1}{\sqrt n}$$
   
    $$\begin{aligned}
-   \lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}}) &=\lim_{u\to \0}\frac{ln M (tu)}{u^{2}} , By applying L Hopital's rule we get ,
+   \lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}) &=\lim_{u\to \0}\frac{ln M (tu)}{u^{2}} , By applying L Hopital's rule we get ,
 								   &=\lim_{u\to \0}\frac{ M^{'}(tu)t}{M(tu).2u} 	, M(tu) = M(0) =1
 								   &=\frac{t}{2}\lim_{u\to \0}\frac{ M^{'}(tu)}{u} , M^{'}(tu) = /mu , So by applying L Hopital's rule again,
 								   &=\frac{t}{2}\lim_{u\to \0}\frac{ M^{''}(t)}{1} , M^{'}(tu) = /sigma^{2} =1 , as  /mu =0
