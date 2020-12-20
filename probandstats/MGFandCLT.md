@@ -8,7 +8,7 @@ Thus nth moment is $$E(X^{n})$$
 As we know that Variance can be given by \
 (second moment - square of the first moment)= $$E(X^{2}) - E(X)^{2}$$
 
-## Moment-generating function
+## Moment-generating function (MGF)
 
 One general  method to describe all the moments is by using Moment generating functions.\
 Maps a random variable X to a function M , \
@@ -47,7 +47,7 @@ Moment-generating function is so named because it can be used to find the moment
 This is  the integral of the standard normal distribution so $$ \frac{1}{2\pi}\int_e^{\frac{-(x-t)^{2}}{2}} dx $$ integrates to 1. 
  
 
-## Central limit theorem
+## Central limit theorem (CLT)
 
 Central limit theorem says that probability distribution of a large sample from a population will be approximately _Normally distributed_, even if the original variables are not normally distributed. It applies to all kind of distribution - discreet, continuous.\
 It also allows probability estimation of events even when you do not know the underlying distribution.
