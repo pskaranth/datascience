@@ -34,7 +34,7 @@ Thus, $$ M^{'}(0) = E[Xe^{0}] = EX$$\
  
 Moment-generating function is so named because it can be used to find the moments of the distribution.
  $$\int_a^b \! f(x)$$
- $$\int_(-\infty)^(\infty)  \! e^{tX}$$
+ $$\int_{-\infty}^{\infty}  \! e^{tX}$$
  chk
  
 ## MGF of a Normal Distribution:
@@ -44,10 +44,10 @@ Moment-generating function is so named because it can be used to find the moment
  $$M(t) = e^{\frac{t^{2}}{2}}$$
  
  $$\begin{aligned}
- M(t) = E(e^{tX}) &= \int_-\infty^\infty e^{tX} f(x)dx
-					&=\int_-\infty^\infty e^{tX}  \frac{1}{\sqrt 2 \pi}.e^{\frac{-x^{2}}{2}} dx
-					&=\frac{1}{\sqrt 2 \pi} \int_ e^{\frac{-x^{2}-2tx}{2}}dx
-					&=e^\frac{t^{2}}{2} \frac{1}{2\pi}\int_e^{\frac{-(x-t)^{2}}{2}} dx
+ M(t) = E(e^{tX}) &= \int_−∞^−∞ \! e^{tX} f(x)dx
+					&=\int_-\infty^\infty \! e^{tX}  \frac{1}{\sqrt 2 \pi}.e^{\frac{-x^{2}}{2}} dx
+					&=\frac{1}{\sqrt 2 \pi} \int_ \! e^{\frac{-x^{2}-2tx}{2}}dx
+					&=e^\frac{t^{2}}{2} \frac{1}{2\pi}\int_ \! e^{\frac{-(x-t)^{2}}{2}} dx
 					&= e^\frac{t^{2}}{2}
 	\end{aligned}$$
 This is  the integral of the standard normal distribution so $$ \frac{1}{2\pi}\int_e^{\frac{-(x-t)^{2}}{2}} dx $$ integrates to 1. 
