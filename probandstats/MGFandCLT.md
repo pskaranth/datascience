@@ -34,7 +34,8 @@ Thus, $$ M^{'}(0) = E[Xe^{0}] = EX$$\
  
 Moment-generating function is so named because it can be used to find the moments of the distribution.
  $$\int_a^b \! f(x)$$
- $$\int_-\infty^\infty  \! e^{tX}$$
+ $$\int_(-\infty)^(\infty)  \! e^{tX}$$
+ chk
  
 ## MGF of a Normal Distribution:
  
