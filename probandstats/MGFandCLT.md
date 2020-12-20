@@ -71,16 +71,25 @@ To prove $$F_{Z_{n}}$$ as $$n \to \infty$$, it approaches $$F(Z_{x}) \forall x $
 This can be proved using moment generating functions, 
 
   $$M_{Z_{n}}(t) \to M(Z_{t})$$  $$\forall t$$\
-  $$M_{Z_{n}}(t) as n \to \infty =  e^\frac{t^{2}}{2}$$\
-  We have \
+ If the moment generating function as n approaches $$\infty$$ equals the moment genrating function of a normal distribution. \
+  That is same as $$M_{Z_{n}}(t)$$ as $$n \to \infty =  e^\frac{t^{2}}{2}$$\
+  We have, \
   $$Z_{n}<x = \sum_{i=1}^n\frac{X_{i}}{\sqrt n}$$\
  $$ M\frac{X_{i}}{\sqrt n}(t) = M (\frac{t}{\sqrt n})$$\
   $$ M_{Z_{n}}(t)= M (\frac{t}{\sqrt n})^{n}$$\
- Let's show that M $$(\frac{t}{\sqrt n})^{n}   n \to \infty e^\frac{t^{2}}{2}$$
+ Let's show that M $$(\frac{t}{\sqrt n})^{n}$$ as $$n \to \infty e^\frac{t^{2}}{2}$$
    
-   $$\lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}) = \frac{t^{2}}{2}$$
+  $$\lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}) = \frac{t^{2}}{2}$$
    
   Substituting $$u = \frac{1}{\sqrt n}$$
   
-here
-		
+  $$\lim_{u\to 0} \frac{ M^{'}(tu)t}{M(tu).2u}, M(tu) = M(0) =1\\$$
+  
+  $$\begin{aligned}
+  		      \lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}) &= \lim_{u\to 0} \frac{ln M (tu)}{u^{2}} \\
+								   &= \lim_{u\to 0} \frac{ M^{'}(tu)t}{M(tu).2u} \\ M(tu) = M(0) =1\\
+								   &= \frac{t}{2} \lim_{u\to 0}\frac{ M^{'}(tu)}{u} \\ M^{'}(tu) = \mu \\
+								   &= \frac{t}{2} \lim_{u\to 0}\frac{ M^{"}(t)}{1} \\ M^{'}(tu) = \sigma^{2} =1 \\ as  \mu =0\\
+								   &= \frac{t^{2}}{2} \\
+		  \end{aligned}$$	  
+		  Hence proved that $$Z_{n}$$ approaches standard normal distribution.
