@@ -20,18 +20,19 @@ $$E(e^{tX}) = (1+E(\frac{t}{1!}X)+E(\frac{t^{2}}{2!}X^{2}))$$
  
 If you need to recover the moments, take a derivative and plug in t = 0.
 
- $$M^{'}(t)=\frac{d}{dt} E[e^{tX}]$$, rest is zero as t=0\
- $$\begin{aligned}
+First Moment\
+$$M^{'}(t)=\frac{d}{dt} E[e^{tX}]$$, rest is zero as t=0\
+$$\begin{aligned}
 		M^{'}(t) &=\frac{d}{dt} [\sum p(x).e^{tX}] \\
 			 &= \sum \frac{d}{dt}p(x).e^{tX} \\
-			 &= E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})
+			 &= E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})\\
 \end{aligned} $$
 Thus, $$ M^{'}(0) = E[Xe^{0}] = EX$$\
- Second moment\
- $$M^{"}(t) = \frac{d}{dt}M^{'}(t)=\frac{d}{dt} E(X.e^{tX}) = E[X^{2}.e^{tX}] $$\
- $$M^{"}(0) =  E[X^{2}e^{0}] = EX^{2}$$\
- $$n\geq 0 , M^{n}(t) = E[X^{n}.e^{tX}]$$\
- at $$t=0, M^{n}(0) = E[X^{n}]$$
+Second moment\
+$$M^{"}(t) = \frac{d}{dt}M^{'}(t)=\frac{d}{dt} E(X.e^{tX}) = E[X^{2}.e^{tX}] $$\
+$$M^{"}(0) =  E[X^{2}e^{0}] = EX^{2}$$\
+$$n\geq 0 , M^{n}(t) = E[X^{n}.e^{tX}]$$\
+at $$t=0, M^{n}(0) = E[X^{n}]$$
  
 Moment-generating function is so named because it can be used to find the moments of the distribution.
  
@@ -48,6 +49,7 @@ Moment-generating function is so named because it can be used to find the moment
 					&= e^\frac{t^{2}}{2} \frac{1}{\sqrt 2\pi}\int_ \! e^{\frac{-(x-t)^{2}}{2}} dx \\
 					&= e^\frac{t^{2}}{2}
    \end{aligned}$$
+   
 This is  the integral of the standard normal distribution so $$ \frac{1}{2\pi}\int_ \! e^{\frac{-(x-t)^{2}}{2}} dx $$ integrates to 1. 
  
 
@@ -64,17 +66,17 @@ Consider the cumulative distribution of $$Z_{n}$$ , and $$\mu = 0, \sigma = 1 $$
 $$F_{Z_{n}} = P(Z_{n}<x) = P(\frac{X_{1}+X_{2}+X_{3}.. +X_{3} }{\sqrt n} \leq x)$$\
 If Z is distributed normal, then $$F(Z_{x}) =  \int_{-\infty}^x \frac{1}{\sqrt 2 \pi}.e^{\frac{-t^{2}}{2}} $$
 
-To prove $$F_{Z_{n}}$$ as $$n \to \infty \! F(Z_{x}) \forall x $$
+To prove $$F_{Z_{n}}$$ as $$n \to \infty$$, it approaches $$F(Z_{x}) \forall x $$
 
 This can be proved using moment generating functions, 
 
-  $$M_{Z_{n}}(t) \to M(Z_{t})$$  $$\forall t$$
+  $$M_{Z_{n}}(t) \to M(Z_{t})$$  $$\forall t$$\
   $$M_{Z_{n}}(t) as n \to \infty =  e^\frac{t^{2}}{2}$$\
   We have \
-  $$Z_{n}<x = \sum_{i=1}^n\frac{X_{i}}{\sqrt n}$$
- $$ M\frac{X_{i}}{\sqrt n}(t) = M (\frac{t}{\sqrt n})$$
-  $$ M_{Z_{n}}(t)= M (\frac{t}{\sqrt n})^{n}$$
-   Let's show that M $$(\frac{t}{\sqrt n})^{n}   n \to \infty e^\frac{t^{2}}{2}$$
+  $$Z_{n}<x = \sum_{i=1}^n\frac{X_{i}}{\sqrt n}$$\
+ $$ M\frac{X_{i}}{\sqrt n}(t) = M (\frac{t}{\sqrt n})$$\
+  $$ M_{Z_{n}}(t)= M (\frac{t}{\sqrt n})^{n}$$\
+ Let's show that M $$(\frac{t}{\sqrt n})^{n}   n \to \infty e^\frac{t^{2}}{2}$$
    
    $$\lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}) = \frac{t^{2}}{2}$$
    
