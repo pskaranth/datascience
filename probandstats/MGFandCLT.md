@@ -1,3 +1,4 @@
+{% include lib/mathjax.html %}
 ## Moments of Distribution
 Shape of distribution can be explained by only a few moments like _Mean_ and _Variance_. \
 The first moment is the mean given by $$ μ_{x} = \sum x.P_{x}= E(X)$$ \
@@ -32,7 +33,8 @@ Moment-generating function is so named because it can be used to find the moment
  
 ## MGF of a Normal Distribution:
  
- For a Standard Normal function,$$\mu =0$$ and variance = 1-> N(0,1), $$f(x) = \frac{1}{\sqrt 2 \pi}.e^{\frac{-x^{2}}{2}} $$\
+ For a Standard Normal function,$$\mu =0$$ and variance = 1-> N(0,1)\
+ $$f(x) = \frac{1}{\sqrt 2 \pi}.e^{\frac{-x^{2}}{2}} $$\
  $$M(t) = e^{\frac{t^{2}}{2}}$$
  
  $$\begin{aligned}
@@ -47,15 +49,15 @@ This is  the integral of the standard normal distribution so $$ \frac{1}{2\pi}\i
 
 ## Central limit theorem
 
-Central limit theorem says that probability distribution of a large sample from a population will be approximately _Normally distributed_, even if the original variables are not normally distributed. It applies to all kind of distribution - discreet, continuous.
-It allows probability estimation of events even when you do not know the underlying distribution.
+Central limit theorem says that probability distribution of a large sample from a population will be approximately _Normally distributed_, even if the original variables are not normally distributed. It applies to all kind of distribution - discreet, continuous.\
+It also allows probability estimation of events even when you do not know the underlying distribution.
 
 
 Condider $$X^{n} = X_{1},X_{2},X_{3}..$$ are iid with finite mean $$\mu$$ and $$\sigma$$,\
 As $$n \to \infty$$, the distribution of  $$/frac{X_{1}+X_{2}+X_{3}.. +X_{3} - n\mu }{\sigma\sqrt n}$$ approaches standard normal N(0,1)
 
 Consider the cumulative distribution of $$Z_{n}$$ , and $$\mu = 0, \sigma = 1 $$\
-$$F_{Z_{n}} = P(Z_{n}<x) = P(/frac{X_{1}+X_{2}+X_{3}.. +X_{3} }{\sqrt n} \leq x)$$
+$$F_{Z_{n}} = P(Z_{n}<x) = P(/frac{X_{1}+X_{2}+X_{3}.. +X_{3} }{\sqrt n} \leq x)$$\
 If Z is distributed normal, then $$F(Z_{x}) =  \int_-\infty^x \frac{1}{\sqrt 2 \pi}.e^{\frac{-t^{2}}{2}} $$
 
 To prove $$F_{Z_{n}}$$ as $$n \to \infty F(Z_{x}) \forall x $$\
