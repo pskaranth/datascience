@@ -33,8 +33,8 @@ Thus, $$ M^{'}(0) = E[Xe^{0}] = EX$$\
  at $$t=0, M^{n}(0) = E[X^{n}]$$
  
 Moment-generating function is so named because it can be used to find the moments of the distribution.
- \int_a^b \! f(x)
- \int_-\infty^\infty  \! e^{tX}
+ $$\int_a^b \! f(x)$$
+ $$\int_-\infty^\infty  \! e^{tX}$$
  
 ## MGF of a Normal Distribution:
  
@@ -80,11 +80,5 @@ This can be proved using moment generating functions,
    
   Substituting $$u = \frac{1}{\sqrt n}$$
   
-   $$\begin{aligned}
-  		      \lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}) &= \lim_{u\to 0} \frac{ln M (tu)}{u^{2}} 
-								   &= \lim_{u\to 0} \frac{ M^{'}(tu)t}{M(tu).2u} , M(tu) = M(0) =1
-								   &= \frac{t}{2} \lim_{u\to 0}\frac{ M^{'}(tu)}{u} , M^{'}(tu) = \mu 
-								   &= \frac{t}{2} \lim_{u\to 0}\frac{ M^{''}(t)}{1} , M^{'}(tu) = \sigma^{2} =1 , as  \mu =0
-								   &= \frac{t^{2}}{2} 
-		  \end{aligned}$$, Hence proved that $$Z_{n}$$ approaches standard normal distribution.
+
 		
