@@ -3,10 +3,10 @@
 Shape of distribution can be explained by only a few moments like _Mean_ and _Variance_. 
 
 The first moment is the mean given by $$ E(X) = μ_{x} = \sum x.P_{x}$$ \
-The second moment describes the Variance, which describes how spread out it is around the mean. Second moment is given by $$E(X^{2})$$ \
+The second moment describes the variance, which describes how spread out it is around the mean. It is given by $$E(X^{2})$$ \
 nth moment is $$E(X^{n})$$
 
-Thus, moments can be defined as Expectations of powers of X - $$E(X^{n})$$.
+Thus, moments can be defined as Expectations of powers of X = $$E(X^{n})$$.
 
 And variance can be given by \
 (second moment - square of the first moment) = $$E(X^{2}) - E(X)^{2}$$ or just $$E(X^{2})$$ , if mean is 0.
@@ -30,7 +30,7 @@ $$M^{'}(t)=\frac{d}{dt} E[e^{tX}]$$, rest is zero as t=0
 $$\begin{aligned}
 		M^{'}(t) &=\frac{d}{dt} [\sum p(x).e^{tX}] \\
 			 &= \sum \frac{d}{dt}p(x).e^{tX} \\
-			 &= E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})\\
+			 &= E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})
 \end{aligned} $$
 
 Thus, $$ M^{'}(0) = E[Xe^{0}] = EX$$\
@@ -58,7 +58,7 @@ Moment-generating function is so named because it can be used to find the moment
 					&= e^\frac{t^{2}}{2}
    \end{aligned}$$
    
-This is  the integral of the standard normal distribution so $$ \frac{1}{(2\pi)}\int_ \! e^{\frac{-(x-t)^{2}}{2}} dx $$ integrates to 1. 
+This is  the integral of the standard normal distribution so $$ \frac{1}{\sqrt(2\pi)}\int_ \! e^{\frac{-(x-t)^{2}}{2}} dx $$ integrates to 1. 
  
 
 ## Central limit theorem (CLT)
@@ -85,7 +85,9 @@ Let's prove that moment generating function as n approaches $$\infty$$ equals th
   $$Z_{n}<x = \sum_{i=1}^n\frac{X_{i}}{\sqrt n}$$\
  $$ M\frac{X_{i}}{\sqrt n}(t) = M (\frac{t}{\sqrt n})$$\
   $$ M_{Z_{n}}(t)= M (\frac{t}{\sqrt n})^{n}$$\
- Let's show that M $$(\frac{t}{\sqrt n})^{n}$$ as $$n \to \infty e^\frac{t^{2}}{2}$$
+ Let's show that M $$(\frac{t}{\sqrt n})^{n}$$ as $$n \to \infty$$ =  $$e^\frac{t^{2}}{2}$$ 
+ 
+ Taking Log on both sides,
    
   $$\lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}) = \frac{t^{2}}{2}$$
    
