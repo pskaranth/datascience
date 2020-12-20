@@ -5,24 +5,27 @@ The first moment is the mean given by $$ μ_{x} = \sum x.P_{x}= E(X)$$ \
 The second moment describes the Variance, which describes how spread out it is around the mean. Second moment is given by $$E(X^{2})$$ \
 Thus nth moment is $$E(X^{n})$$
 
-As we know that Variance can be given by \
-(second moment - square of the first moment)= $$E(X^{2}) - E(X)^{2}$$
+Variance can be given by \
+(second moment - square of the first moment) = $$E(X^{2}) - E(X)^{2} = $$E(X^{2}) , if mean is 0.
 
 ## Moment-generating function (MGF)
 
-One general  method to describe all the moments is by using Moment generating functions.\
-Maps a random variable X to a function M , \
+One general  method to describe all the moments is by using Moment generating functions, denoted by $$M_{X}$$\
+It maps a random variable X to a function M and is given by , \
 $$M_{X} = E[e^{tX}], t\in R $$\
-$$e^{tX} = (1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$\
+$$e^{tX} = (1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$ , by expanding\ 
 so $$E(e^{tX}) = E(1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$\
 $$E(e^{tX}) = (1+E(\frac{t}{1!}X)+E(\frac{t^{2}}{2!}X^{2}))$$
  
 If you need to recover the moments, take a derivative and plug in t =0 \
-$$\begin{aligned}
- M^{'}(t)&=\frac{d}{dt} E[e^{tX}], rest is zero as t=0
-		 &=\frac{d}{dt} [\sum p(x).e^[tX]] = \sum \frac{d}{dt}p(x).e^[tX] = E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})
+
+ $$M^{'}(t)&=\frac{d}{dt} E[e^{tX}]$$, rest is zero as t=0
+ $$\begin{aligned}
+		M^{'}(t) &=\frac{d}{dt} [\sum p(x).e^{tX}] 
+		 &= \sum \frac{d}{dt}p(x).e^{tX}
+		 &= E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})
 		 \end{aligned} $$
-$$ M^{'}(0) = E[Xe^{0}] = EX$$\
+Thus, $$ M^{'}(0) = E[Xe^{0}] = EX$$\
  Second moment\
  $$M^{"}(t) = \frac{d}{dt}M^{'}(t)=\frac{d}{dt} E(X.e^{tX}) = E[X^{2}.e^{tX}] $$\
  $$M^{"}(0) =  E[X^{2}e^{0}] = EX^{2}$$\
@@ -33,7 +36,7 @@ Moment-generating function is so named because it can be used to find the moment
  
 ## MGF of a Normal Distribution:
  
- For a Standard Normal function,$$\mu =0$$ and variance = 1-> N(0,1)\
+ For a Standard Normal function,$$\mu =0$$ and variance = 1 which is denoted by- N(0,1)\
  $$f(x) = \frac{1}{\sqrt 2 \pi}.e^{\frac{-x^{2}}{2}} $$\
  $$M(t) = e^{\frac{t^{2}}{2}}$$
  
@@ -54,10 +57,10 @@ It also allows probability estimation of events even when you do not know the un
 
 
 Condider $$X^{n} = X_{1},X_{2},X_{3}..$$ are iid with finite mean $$\mu$$ and $$\sigma$$,\
-As $$n \to \infty$$, the distribution of  $$/frac{X_{1}+X_{2}+X_{3}.. +X_{3} - n\mu }{\sigma\sqrt n}$$ approaches standard normal N(0,1)
+As $$n \to \infty$$, the distribution of  $$\frac{X_{1}+X_{2}+X_{3}.. +X_{3} - n\mu }{\sigma\sqrt n}$$ approaches standard normal N(0,1)
 
 Consider the cumulative distribution of $$Z_{n}$$ , and $$\mu = 0, \sigma = 1 $$\
-$$F_{Z_{n}} = P(Z_{n}<x) = P(/frac{X_{1}+X_{2}+X_{3}.. +X_{3} }{\sqrt n} \leq x)$$\
+$$F_{Z_{n}} = P(Z_{n}<x) = P(\frac{X_{1}+X_{2}+X_{3}.. +X_{3} }{\sqrt n} \leq x)$$\
 If Z is distributed normal, then $$F(Z_{x}) =  \int_-\infty^x \frac{1}{\sqrt 2 \pi}.e^{\frac{-t^{2}}{2}} $$
 
 To prove $$F_{Z_{n}}$$ as $$n \to \infty F(Z_{x}) \forall x $$\
@@ -75,10 +78,11 @@ This can be proved using moment generating functions,
    
   Substituting $$u = \frac{1}{\sqrt n}$$
   
-   $$\begin{aligned} \lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}}) &=\lim_{u\to \0}\frac{ln M (tu)}{u^{2}} , By applying L Hopital's rule we get ,
-											      &=\lim_{u\to \0}\frac{ M^{'}(tu)t}{M(tu).2u} 	, M(tu) = M(0) =1
-												  &=\frac{t}{2}\lim_{u\to \0}\frac{ M^{'}(tu)}{u} , M^{'}(tu) = /mu , So by applying L Hopital's rule again,
-												  &=\frac{t}{2}\lim_{u\to \0}\frac{ M^{''}(t)}{1} , M^{'}(tu) = /sigma^{2} =1 , as  /mu =0
-												  &=\frac{t^{2}}{2} 
-												  \end{aligned}$$, Hence proved that Z_{n} approaches standard normal distribution.
+   $$\begin{aligned}
+   \lim_{n\to \infty}n.ln M (\frac{t}{\sqrt n}}) &=\lim_{u\to \0}\frac{ln M (tu)}{u^{2}} , By applying L Hopital's rule we get ,
+								   &=\lim_{u\to \0}\frac{ M^{'}(tu)t}{M(tu).2u} 	, M(tu) = M(0) =1
+								   &=\frac{t}{2}\lim_{u\to \0}\frac{ M^{'}(tu)}{u} , M^{'}(tu) = /mu , So by applying L Hopital's rule again,
+								   &=\frac{t}{2}\lim_{u\to \0}\frac{ M^{''}(t)}{1} , M^{'}(tu) = /sigma^{2} =1 , as  /mu =0
+								  &=\frac{t^{2}}{2} 
+		  \end{aligned}$$, Hence proved that $$Z_{n}$$ approaches standard normal distribution.
 		
