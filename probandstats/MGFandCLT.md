@@ -13,16 +13,17 @@ Variance can be given by \
 One general  method to describe all the moments is by using Moment generating functions, denoted by $$M_{X}$$\
 It maps a random variable X to a function M and is given by , \
 $$M_{X} = E[e^{tX}], t\in R $$\
-$$e^{tX} = (1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$ , by expanding \ 
-so $$E(e^{tX}) = E(1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$\
+$$e^{tX} = (1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$ , by expanding 
+
+$$E(e^{tX}) = E(1+\frac{t}{1!}X+\frac{t^{2}}{2!}X^{2})$$\
 $$E(e^{tX}) = (1+E(\frac{t}{1!}X)+E(\frac{t^{2}}{2!}X^{2}))$$
  
-If you need to recover the moments, take a derivative and plug in t =0 
+If you need to recover the moments, take a derivative and plug in t = 0.
 
  $$M^{'}(t)=\frac{d}{dt} E[e^{tX}]$$, rest is zero as t=0\
  $$\begin{aligned}
-		M^{'}(t) &=\frac{d}{dt} [\sum p(x).e^{tX}] 
-			 &= \sum \frac{d}{dt}p(x).e^{tX}
+		M^{'}(t) &=\frac{d}{dt} [\sum p(x).e^{tX}] \\
+			 &= \sum \frac{d}{dt}p(x).e^{tX} \\
 			 &= E(\frac{d}{dt}e^{tX}) = E(X.e^{tX})
 \end{aligned} $$
 Thus, $$ M^{'}(0) = E[Xe^{0}] = EX$$\
@@ -41,13 +42,13 @@ Moment-generating function is so named because it can be used to find the moment
  $$M(t) = e^{\frac{t^{2}}{2}}$$
  
  $$\begin{aligned}
-		       M(t) = E(e^{tX}) &= \int_{-\infty}^{\infty} \! e^{tX} f(x)dx
-					&= \int_{-\infty}^{\infty} \! e^{tX}  \frac{1}{\sqrt 2 \pi}.e^{\frac{-x^{2}}{2}} dx
-					&= \frac{1}{\sqrt 2 \pi} \int_ \! e^{\frac{-x^{2}-2tx}{2}}dx
-					&= e^\frac{t^{2}}{2} \frac{1}{\sqrt 2\pi}\int_ \! e^{\frac{-(x-t)^{2}}{2}} dx
+		       M(t) = E(e^{tX}) &= \int_{-\infty}^{\infty} \! e^{tX} f(x)dx \\
+					&= \int_{-\infty}^{\infty} \! e^{tX}  \frac{1}{\sqrt 2 \pi}.e^{\frac{-x^{2}}{2}} dx \\
+					&= \frac{1}{\sqrt 2 \pi} \int_ \! e^{\frac{-x^{2}-2tx}{2}}dx \\
+					&= e^\frac{t^{2}}{2} \frac{1}{\sqrt 2\pi}\int_ \! e^{\frac{-(x-t)^{2}}{2}} dx \\
 					&= e^\frac{t^{2}}{2}
    \end{aligned}$$
-This is  the integral of the standard normal distribution so $$ \frac{1}{2\pi}\int_e^{\frac{-(x-t)^{2}}{2}} dx $$ integrates to 1. 
+This is  the integral of the standard normal distribution so $$ \frac{1}{2\pi}\int_ \! e^{\frac{-(x-t)^{2}}{2}} dx $$ integrates to 1. 
  
 
 ## Central limit theorem (CLT)
@@ -61,9 +62,10 @@ As $$n \to \infty$$, the distribution of  $$\frac{X_{1}+X_{2}+X_{3}.. +X_{3} - n
 
 Consider the cumulative distribution of $$Z_{n}$$ , and $$\mu = 0, \sigma = 1 $$\
 $$F_{Z_{n}} = P(Z_{n}<x) = P(\frac{X_{1}+X_{2}+X_{3}.. +X_{3} }{\sqrt n} \leq x)$$\
-If Z is distributed normal, then $$F(Z_{x}) =  \int_-\infty^x \frac{1}{\sqrt 2 \pi}.e^{\frac{-t^{2}}{2}} $$
+If Z is distributed normal, then $$F(Z_{x}) =  \int_{-\infty}^x \frac{1}{\sqrt 2 \pi}.e^{\frac{-t^{2}}{2}} $$
 
-To prove $$F_{Z_{n}}$$ as $$n \to \infty F(Z_{x}) \forall x $$\
+To prove $$F_{Z_{n}}$$ as $$n \to \infty \! F(Z_{x}) \forall x $$
+
 This can be proved using moment generating functions, 
 
   $$M_{Z_{n}}(t) \to M(Z_{t})$$  $$\forall t$$
@@ -78,5 +80,5 @@ This can be proved using moment generating functions,
    
   Substituting $$u = \frac{1}{\sqrt n}$$
   
-
+here
 		
