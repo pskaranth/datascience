@@ -56,7 +56,7 @@ b_{p,n}k &= \binom nk (\frac{\lambda}{n})^{k}(1-\frac{\lambda}{n})^n-k \\
 &= e^{-\lambda}\frac{\lambda^{k}}{k!}\\
 \end{aligned}$$
 
-rest of the parameters will be equal to 1\
+As $$ n\to \infty $$ rest of the parameters will be equal to 1\
 and $$(1-\frac{\lambda}{n})^n = ((1-\frac{\lambda}{n})^{\frac{n}{\lambda}})^\lambda = (e^{-1})^{\lambda}$$
 
 Expectation \
@@ -71,8 +71,8 @@ Daily store customers..
 
 ## Geometric Distribution
 
-It gives the probability that the first occurrence of success requires n independent trials, each with success probability p and failure with probabiity q=(1-p). \ 
-Probability of nth trial being successful can be given by \
+It gives the probability that the first occurrence of success requires n independent trials, each with success probability p and failure with probabiity q=(1-p).  
+Probability of nth trial being successful can be given by 
 $$g_{p}(n) = q^{n-1}.p$$
 
 Expectation\
