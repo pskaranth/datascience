@@ -1,3 +1,5 @@
+{% include lib/mathjax.html %}
+
 ## Probability Distribution
 (_From Wiki_) It is the mathematical function which gives the probabilities of occurrence of different possible outcomes for an experiment.
 		  
@@ -18,7 +20,7 @@ $$V(X) = p - p^{2} = p(1-p) = pq$$
 Distribution of n number of experiments with number of successes(k), probability p and number of failures (n-k) with probability (1-p).\
 Each sequence has probability $$p^{k}.q^{n-k}$$\
 Nmmber of such sequence is given by $$\binom n,k$$\
-Hence the over all distribution can be given by $$b_{p,n}k= \binom n,k p^{k}.q^{n-k}$$\
+Hence the over all distribution can be given by $$b_{p,n}k= \binom n,k p^{k}.q^{n-k}$$
 
 Expectation \
 X is a binomially distributed variable,\
@@ -30,7 +32,7 @@ V(X) = np(1-p)
 
 Applications include :\
 Probability of Rainy Days in a month\
-Positive Reponse to a  treatement.\
+Positive Reponse to a  treatement.
 
 ## Poisson Distribution
 It is a discrete probabiity distribution that gives the probability of given number of events occurring in a fixed interval of time or space.\
@@ -40,8 +42,7 @@ Probability Distribution can be given by \
 $$P_{\lamda}k = e^{-\lambda}. \frac{\lambda ^{k}}{k!}$$
 $$\lambda$$ the parameter\
 e is Euler's number (e = 2.718)\
-k is the number of occurrences\
-
+k is the number of occurrences
 
 Approximates Binomial $$B_{p,n}$$ for large n and small p so that $$np = \lambda$$
 
@@ -61,13 +62,14 @@ $$E(X) = \lambda$$
 Variance \ 
 $$E(X)(X-1) = \lambda^{2}$$
 
-Applications include:
-People clicking ads.
+Applications include:\
+People clicking ads.\
 Daily store customers..
 
 ## Geometric Distribution
 
-It gives the probability that the first occurrence of success requires n independent trials, each with success probability p and failure with probabiity q=(1-p). Probability of nth trial being successful can be given by
+It gives the probability that the first occurrence of success requires n independent trials, each with success probability p and failure with probabiity q=(1-p).\ 
+Probability of nth trial being successful can be given by
 $$g_{p}(n) = q^{n-1}.p$$
 
 Expectation \
@@ -76,7 +78,7 @@ $$E(X) = \frac{1}{p}$$
 Variance \
 $$V(X) = \frac{q}{p^{2}}$$
 
-Geometric Distribution have memoryless property. After n number of events, any new(m) event behaves as if it's from the start.
+Geometric Distribution have memoryless property. After n number of events, any new(m) event behaves as if it's from the start.\
 $$P(X=n+m| X>n) = P(X=m)$$
 
 $$\begin{aligned}
