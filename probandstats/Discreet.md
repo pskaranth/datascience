@@ -57,12 +57,13 @@ b_{p,n}k &= \binom nk (\frac{\lambda}{n})^{k}(1-\frac{\lambda}{n})^n-k \\
 \end{aligned}$$
 
 rest of the parameters will be equal to 1\
-and $$\(1-\frac{\lambda}{n})^n =((1-\frac{\lambda}{n})^(\frac{n}{\lambda}))^\lambda = (e^{-1})^{\lambda}$$
+and $$\frac{1-\frac{\lambda}{n}^n} =((1-\frac{\lambda}{n})^{\frac{n}{\lambda}})^\lambda = (e^{-1})^{\lambda}$$
 
 Expectation \
 $$E(X) = \lambda$$
 
-Variance \ 
+Variance
+
 $$E(X)(X-1) = \lambda^{2}$$
 
 Applications include:\
