@@ -57,14 +57,13 @@ b_{p,n}k &= \binom nk (\frac{\lambda}{n})^{k}(1-\frac{\lambda}{n})^n-k \\
 \end{aligned}$$
 
 rest of the parameters will be equal to 1\
-and $$\frac{1-\frac{\lambda}{n}^n} =((1-\frac{\lambda}{n})^{\frac{n}{\lambda}})^\lambda = (e^{-1})^{\lambda}$$
+and $$(1-\frac{\lambda}{n})^n = ((1-\frac{\lambda}{n})^{\frac{n}{\lambda}})^\lambda = (e^{-1})^{\lambda}$$
 
 Expectation \
-$$E(X) = \lambda$$
+E(X) = $$\lambda$$
 
-Variance
-
-$$E(X)(X-1) = \lambda^{2}$$
+Variance\
+E(X)(X-1) = $$\lambda^{2}$$
 
 Applications include:\
 People clicking ads.\
@@ -72,8 +71,8 @@ Daily store customers..
 
 ## Geometric Distribution
 
-It gives the probability that the first occurrence of success requires n independent trials, each with success probability p and failure with probabiity q=(1-p).\ 
-Probability of nth trial being successful can be given by
+It gives the probability that the first occurrence of success requires n independent trials, each with success probability p and failure with probabiity q=(1-p). \ 
+Probability of nth trial being successful can be given by \
 $$g_{p}(n) = q^{n-1}.p$$
 
 Expectation\
