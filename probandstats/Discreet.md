@@ -23,7 +23,7 @@ Each sequence has probability $$p^{k}.q^{n-k}$$\
 Nmmber of such sequence is given by $$\binom nk$$\
 Hence the over all distribution can be given by $$b_{p,n}k= \binom nk p^{k}.q^{n-k}$$
 
-Expectation \
+Expectation\
 X is a binomially distributed variable,\
 $$E[X] = E[X_{1}+X_{2}+...] = E[X_{1}]+E[X_{2}]+.. = p+p...+p =np$$\
 Since X is sum of identical Binomial variables.
@@ -47,28 +47,17 @@ k is the number of occurrences
 
 Approximates Binomial $$B_{p,n}$$ for large n and small p so that $$np = \lambda$$
 
-$$n\_{k}\qquad$$
-$$n\_{k}$$
-$$\fallfac{n}{k} $$
-
 $$b_{p,n}k= \binom nk p^{k}.(1-p)^{n-k}$$ \
-Let$$ p= \frac{\lambda}{n}$$
-
-$$\begin{aligned}
-b_{p,n}k &=\binom nk (\frac{\lambda}{n})^{k}(1-\frac{\lambda}{n})^n-k \\
-	 &= \frac{n\fallingfactorial{k}}{k!} .\frac{\lambda^{k}}{n^{k}}.\frac{1-\frac{\lambda}{n}}^n{1-\frac{\lambda}{n}}^k \\
-	 &= e^{-\lambda}\frac{\lambda^{k}}{k!}\\
-\end{aligned}$$
+Let $$ p= \frac{\lambda}{n}$$
 
 $$\begin{aligned}
 b_{p,n}k &= \binom nk (\frac{\lambda}{n})^{k}(1-\frac{\lambda}{n})^n-k \\
-&= \frac{n!}{(n-k)!k!} .\frac{\lambda^{k}}{n^{k}}.\frac{1-\frac{\lambda}{n}^n}{1-\frac{\lambda}{n}^k }\\
+&= \frac{n!}{(n-k)!k!} .\frac{\lambda^{k}}{n^{k}}.\frac{(1-\frac{\lambda}{n})^n}{(1-\frac{\lambda}{n})^k }\\
 &= e^{-\lambda}\frac{\lambda^{k}}{k!}\\
 \end{aligned}$$
 
-
 rest of the parameters will be equal to 1\
-and $$\frac{1-\frac{\lambda}{n}}^n =(({1-\frac{\lambda}{n}})^(\frac{n}{\lambda}))^\lambda = (e^{-1})^{\lambda}$$
+and $$\(1-\frac{\lambda}{n})^n =((1-\frac{\lambda}{n})^(\frac{n}{\lambda}))^\lambda = (e^{-1})^{\lambda}$$
 
 Expectation \
 $$E(X) = \lambda$$
@@ -86,10 +75,10 @@ It gives the probability that the first occurrence of success requires n indepen
 Probability of nth trial being successful can be given by
 $$g_{p}(n) = q^{n-1}.p$$
 
-Expectation \
+Expectation\
 $$E(X) = \frac{1}{p}$$
 
-Variance \
+Variance\
 $$V(X) = \frac{q}{p^{2}}$$
 
 Geometric Distribution have memoryless property. After n number of events, any new(m) event behaves as if it's from the start.\
