@@ -49,14 +49,14 @@ Approximates Binomial $$B_{p,n}$$ for large n and small p so that $$np = \lambda
 
 $$n\_{k}\qquad$$
 $$n\_{k}$$
-x\fallingfactorial{n}
+$$x\fallingfactorial{n}$$
 
 $$b_{p,n}k= \binom nk p^{k}.(1-p)^{n-k}$$
 Let$$ p= \frac{\lambda}{n}$$
 
 $$\begin{aligned}
 b_{p,n}k &=\binom nk (\frac{\lambda}{n})^{k}(1-\frac{\lambda}{n})^n-k \\
-	 &= \frac{n\fallingfactorial{k}{k!} .\frac{\lambda^{k}}{n^{k}}.\frac{1-\frac{\lambda}{n}}^n{1-\frac{\lambda}{n}}^k \\
+	 &= \frac{n\fallingfactorial{k}}{k!} .\frac{\lambda^{k}}{n^{k}}.\frac{1-\frac{\lambda}{n}}^n{1-\frac{\lambda}{n}}^k \\
 	 &= e^{-\lambda}\frac{\lambda^{k}}{k!}\\
 \end{aligned}$$
 
