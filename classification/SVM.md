@@ -54,7 +54,7 @@ In case of soft margin SVM, we add a slack variable ( ξ )  to be able to classi
 This can be give by y(w.x+b)>=1 - ξ\
 In this case we are trying to minimize $$|\omega|^{2}+C \sum_{i=1}^nξ $$
 
-<p align="center"><img src="img/SVM_sm.png"></p>
+<p align="center"><img src="../img/SVM_sm.png" width="300px" height="240px"></p>
  
 We're trying to minimize the length of $$\omega$$, because we want a large margin. And we're also trying to minimize the total amount of slack, that is  the sum of the ξ.\
 This is because we don't want too many constraints to be violated. There are two things that is being minimized. There will be eventually a tradeoff between these two things. \
