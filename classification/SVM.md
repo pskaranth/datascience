@@ -46,7 +46,7 @@ or dual (maximising over $$\alpha$$)\
 
 For a convex optimization problem, primal and dual have same optimum solution.
 
-Lagrange dual representaion then is 
+Lagrange dual representation then is 
 
 $$L = \frac{1}{2}|\omega|^{2} - \sum \alpha_{i}[y_{i}(w.x_{i}+b)-1]$$
 
@@ -62,7 +62,7 @@ SVM uses this kernel trick to separate non linearly separable data points.
 ## Soft Margin SVM
 
 In case of soft margin SVM, we add a slack variable ( ξ )  to be able to classify in spite of outliers.\
-This can be give by y(w.x+b)>=1 - ξ\
+This can be given by y(w.x+b) >= 1 - ξ\
 In this case we are trying to minimize $$|\omega|^{2}+C \sum_{i=1}^nξ $$
 
 <p align="center"><img src="../img/SVM_sm.png" width="300px" height="240px"></p>
