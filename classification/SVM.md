@@ -16,13 +16,13 @@ For negative samples ; w.x+b <=-1
 This can written with one equation as y(w.x+b)>=1 \
 For the points in gutter it is y(w.x+b)-1 = 0 
 
-<p align="center"><img src="img/SVM.png" width="400px" height="300px"></p>
+<p align="center"><img src="../img/SVM.png" width="300px" height="240px"></p>
 
 So we can see that if the points are linearly separable then the hyperplane is able to distinguish between the points and outliers are incorrectly  classified.\
 This type of SVM is called as _hard margin SVM_.
 
-Width of margin can be given by $$\frac{2}{| \omega |}$$\
-which means we can minimize $$ \frac{1}{2}| \omega |^{2}$$
+Width of margin can be given by $$\frac{2}{ \omega }$$\
+which means we can minimize $$ \frac{1}{2} \omega ^{2}$$
 
 Applying Lagrange's formulation, we get\
 $$L = \frac{1}{2}|\omega|^{2} - \sum \alpha_{i}[y_{i}(w.x_{i}+b)-1]$$\
