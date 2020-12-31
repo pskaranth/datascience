@@ -31,7 +31,7 @@ Also, the goal is to mimimize weights $$\omega = f(\theta)$$ subject to constrai
 
 By using Lagrange multipliers we have,
 
-$$ L = f(\theta) + \sum alpha_{i} g(\theta) $$
+$$ L = f(\theta) + \sum \alpha_{i} g(\theta) $$
 
 Applying above Lagrange's formulation, we get
 
@@ -56,20 +56,22 @@ Lagrange dual representation then is
 
 $$L = \frac{1}{2}|\omega|^{2} - \sum \alpha_{i}[y_{i}(w.x_{i}+b)-1]$$
 
-Substituting for $$\omega $$ ,
+Substituting for $$\omega $$,
 
-$$L = \sum \alpha_{i} -\frac{1}{2} \sum_i\sum_j \alpha_{i} \alpha_{j}y_{i}y_{j} x_{i}.x_{j}$$\
+$$L = \sum \alpha_{i} -\frac{1}{2} \sum_i\sum_j \alpha_{i} \alpha_{j}y_{i}y_{j} x_{i}.x_{j}$$
 
-and  $$\alpha \geq 0$$
+where  $$\alpha \geq 0$$
 
 We get $$\alpha$$ from the above equation and we use that to find $$\omega$$ in the equation 
 
-$$\omega = \sum \alpha_{i}y_{i}.x_{i}$$\
+$$\omega = \sum \alpha_{i}y_{i}.x_{i}$$
 
-According to KKT condition,\ 
-$$alpha_{i}(y_{i}(w.x_{i}+b)-1) = 0$$
+According to KKT condition,
+
+$$\alpha_{i}(y_{i}(w.x_{i}+b)-1) = 0$$
  
-We therefore either have our Lagrange multiplier $$alpha_{i}$$ equal to zero or non-zero and since for the points on the margin  y(w.x+b)-1 = 0, $$\alpha > 0 $$. 
+We therefore either have our Lagrange multiplier $$\alpha_{i}$$ equal to zero or non-zero and since for the points on the margin  y(w.x+b)-1 = 0, $$\alpha > 0 $$. 
+
 These points with $$\alpha > 0 $$ are called support vectors.
 
 ## SVM for Non linearly separable points
