@@ -65,14 +65,14 @@ $$Cos \theta = \frac{\omega.x}{||\omega||x||}$$
 
 As 𝜃 ranges from 0 to 180, cos 𝜃 ranges from 1 to -1
 
-The denominator is always positive\
+The denominator is always positive.Therefore
 
-Therefore $$Cos \theta  ∝  w.x $$
+$$Cos \theta  ∝  w.x $$
 
 From above, for positive points $$\omega.x > 0 $$ ,
 
-So if  $$\omega.x < 0$$\ ,
-we adjust $$\omega$$ such that $$\omega_{new} = \omega+x $$\
+So if  $$\omega.x < 0$$, we adjust $$\omega$$ such that $$\omega_{new} = \omega+x $$
+
 It means that angle between them is greater than 90, but we want it to be less than 90. Performing this operation will get the new angle between $$\omega$$ and x decreased.
 
 ## Sigmoid Neuron 
