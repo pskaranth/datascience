@@ -8,22 +8,25 @@ g(x) aggregates the inputs and function f(x) is the decision based on these aggr
 
 <p align="center"><img src="../img/MPNeuron.png" width="300px" height="240px"></p>
 
-$$g(x) = \sum_{i=1}^{n} x_{i}$$
+$$ y = g(x) = \sum_{i=1}^{n} x_{i}$$
 
-$$ y = 1$$ if $$ \sum_{i=1}^{n} x_{i} \geq b$$
-
-$$ y = 0 $$ otherwise
+$$
+\begin{cases}
+y = 1 \hspace{1cm} if \hspace{1cm} \sum_{i=1}^{n} x_{i} \geq b \\
+y = 0 \hspace{1cm}  otherwise
+\end{cases}
+$$
 
 b is the threshold parameter and is adjsuted with the goal of maximising the correct number of correct predictions.
 
 This algorithm takes only boolean inputs as parameters and if  data has non-boolean inputs, it is converted to a boolean form.
 
-Loss is given by $$ \sum_{i} (\y_{i} - y_{i})^{2}$$\
+Loss is given by $$ \sum_{i} (\hat{y_{i}} - y_{i})^{2}$$\
 $$\hat{y_{i}}$$ is the predicted value, \
 $$y_{i} $$ is the actual value
 	
 Geometric interpretation \
-$$\y_{i} =  \sum_{i=1}^{n} x_{i} \geq b $$ in 2D can be rewritten as
+$$\hat{y_{i}} =  \sum_{i=1}^{n} x_{i} \geq b $$ in 2D can be rewritten as
 
 x1 + x2 - b >= 0 (decision boundary)
 
