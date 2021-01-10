@@ -43,8 +43,11 @@ Each parameter $$x_{i}$$ has different effect on the output, some more and some 
 
 $$g(x) = \sum_{i=1}^{n}\omega_{i} x_{i}$$
 
-$$ y = 1$$ if $$ \sum_{i=1}^{n} \omega_{i} x_{i} \geq b$$\
-$$ y = 0 $$ otherwise
+$$\begin{cases}
+y = 1 \hspace{1cm} if \hspace{1cm} \sum_{i=1}^{n} \omega_{i} x_{i} \geq \\
+y = 0 \hspace{1cm} otherwise
+\end {cases}
+$$
 
 Geometric interpretation \
 $$\hat{y_{i}} =  \sum_{i=1}^{n} \omega_{i} x_{i} \geq b $$ in 2D can be rewritten as
