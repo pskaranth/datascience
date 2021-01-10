@@ -44,7 +44,7 @@ Each parameter $$x_{i}$$ has different effect on the output, some more and some 
 $$g(x) = \sum_{i=1}^{n}\omega_{i} x_{i}$$
 
 $$\begin{cases}
-y = 1 \hspace{1cm} if \hspace{1cm} \sum_{i=1}^{n} \omega_{i} x_{i} \geq \\
+y = 1 \hspace{1cm} if \hspace{1cm} \sum_{i=1}^{n} \omega_{i} x_{i} \geq b \\
 y = 0 \hspace{1cm} otherwise
 \end {cases}
 $$
@@ -57,16 +57,21 @@ $$\omega_{1} x_{1} + \omega_{2} x_{2} - b >= 0 $$ (decision boundary)
 Positive predictions yield a value(1) x1 + x2 - b >= 0 and lie above the decision boundary.\
 Positive predictions yield a value(0) x1 + x2 - b < 0 and lie below the decision boundary.
 
-$$W = [\omega_{1}, \omega_{2}, … \omega_{n}]$$\
-$$X = [x1, x2, … xn]$$\
-$$Cos \theta = \frac{\omega.x}{||\omega||x||}$$\
+$$W = [\omega_{1}, \omega_{2}, … \omega_{n}]$$
+
+$$X = [x1, x2, … xn]$$
+
+$$Cos \theta = \frac{\omega.x}{||\omega||x||}$$
+
 As 𝜃 ranges from 0 to 180, cos 𝜃 ranges from 1 to -1
 
 The denominator is always positive\
-Therefore Cos 𝜃 ∝  w.x\
+
+Therefore $$Cos \theta  ∝  w.x $$
+
 From above, for positive points $$\omega.x > 0 $$ ,
 
-So if  $$\omega.x < 0$$\
+So if  $$\omega.x < 0$$\ ,
 we adjust $$\omega$$ such that $$\omega_{new} = \omega+x $$\
 It means that angle between them is greater than 90, but we want it to be less than 90. Performing this operation will get the new angle between $$\omega$$ and x decreased.
 
