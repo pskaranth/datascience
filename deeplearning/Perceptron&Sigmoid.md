@@ -79,10 +79,10 @@ So if  $$\omega.x < 0$$, we adjust $$\omega$$ such that $$\omega_{new} = \omega+
 
 It means that angle between them is greater than 90, but we want it to be less than 90 (because they belong to positive points). Performing this operation will get the new angle between $$\omega$$ and x decreased.
 
-Putting everything together learning algorithm can be given by:
+Putting everything together, learning algorithm can be given by:
 
 <p align="center">
-while !convergence do \
+while !convergence do \\
  if x  $$\epsilon$$ P and w.x < 0 \
  w = w + x \
  end  \
