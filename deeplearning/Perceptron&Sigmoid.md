@@ -54,8 +54,12 @@ $$\hat{y_{i}} =  \sum_{i=1}^{n} \omega_{i} x_{i} \geq b $$ in 2D can be rewritte
 
 $$\omega_{1} x_{1} + \omega_{2} x_{2} - b >= 0 $$ (decision boundary)
 
-Positive predictions yield a value(1) x1 + x2 - b >= 0 and lie above the decision boundary.\
-Positive predictions yield a value(0) x1 + x2 - b < 0 and lie below the decision boundary.
+Positive predictions yield a value(1) wx1 + wx2 - b >= 0 and lie above the decision boundary.\
+Positive predictions yield a value(0) wx1 + wx2 - b < 0 and lie below the decision boundary.
+
+Learning Algorithm:
+
+We have, 
 
 $$W = [\omega_{1}, \omega_{2}, … \omega_{n}]$$
 
@@ -73,7 +77,20 @@ From above, for positive points $$\omega.x > 0 $$ ,
 
 So if  $$\omega.x < 0$$, we adjust $$\omega$$ such that $$\omega_{new} = \omega+x $$
 
-It means that angle between them is greater than 90, but we want it to be less than 90. Performing this operation will get the new angle between $$\omega$$ and x decreased.
+It means that angle between them is greater than 90, but we want it to be less than 90 (because they belong to positive points). Performing this operation will get the new angle between $$\omega$$ and x decreased.
+
+Putting everything together learning algorithm can be given by:
+
+<p align="center">
+while !convergence do
+ if x  $$\epsilon$$ P and w.x < 0 
+ w = w + x
+ end
+ if x  $$\epsilon$$ N and w.x > 0 
+ w = w - x
+ end
+end
+</p>
 
 ## Sigmoid Neuron 
 
