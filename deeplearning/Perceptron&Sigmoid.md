@@ -81,16 +81,16 @@ It means that angle between them is greater than 90, but we want it to be less t
 
 Putting everything together, learning algorithm can be given by:
 
-<p align="center">
+<p align="center"><i>
 while !convergence do <br> 
- if x  $$\epsilon$$ P and w.x < 0  <br> 
+ if x ϵ P and w.x < 0  <br> 
  w = w + x  <br> 
  end   <br> 
- if x  $$\epsilon$$ N and w.x > 0  <br> 
+ if x ϵ N and w.x > 0  <br> 
  w = w - x  <br> 
  end <br> 
 end
-</p>
+</i></p>
 
 ## Sigmoid Neuron 
 
