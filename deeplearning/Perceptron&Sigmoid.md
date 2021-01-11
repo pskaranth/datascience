@@ -84,12 +84,9 @@ Putting everything together, learning algorithm can be given by:
 <p align="center"><i>
 while !convergence do <br> 
  if x ϵ P and w.x < 0  <br> 
- w = w + x  <br> 
- end   <br> 
+   w = w + x  <br> 
  if x ϵ N and w.x > 0  <br> 
- w = w - x  <br> 
- end <br> 
-end
+   w = w - x  
 </i></p>
 
 ## Sigmoid Neuron 
