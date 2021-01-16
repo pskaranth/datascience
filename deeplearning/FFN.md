@@ -45,10 +45,12 @@ $$ (\omega_{222})_{t+1} = (\omega_{222})- \eta \Delta (\omega_{222})_{t}$$
 We use _Backpropogation Algorithm_ for computing the loss function w.r.t $$\omega$$ i.e $$\Delta (\omega_{222})_{t}$$. 
 
 $$\begin{aligned}
+
 \Delta \omega_{222} = \frac{\partial L}{\partial \omega_{222}} &= \frac{\partial L}{\partial a_{22}}. \frac{\partial a_{22}}{\partial \omega_{222}}\\
-															&= \frac{\partial L}{\partial h_{22}}. \frac{\partial h_{22}}{\partial a_{222}}.\frac{\partial a_{22}}{\partial \omega_{222}}\\
-															&= \frac{\partial L}{\partial a_{31}}.\frac{\partial a_{31}}{\partial h_{22}} \frac{\partial h_{22}}{\partial a_{22}}.\frac{\partial a_{22}}{\partial \omega_{222}}\\
-															&= \frac{\partial L}{\partial \hat{y_{i}}.\frac{\partial \hat{y_{i}}{\partial a_{31}}. \frac{\partial a_{31}}{\partial h_{22}} \frac{\partial h_{22}}{\partial a_{22}}.\frac{\partial a_{22}}{\partial \omega_{222}}\\
+							&= \frac{\partial L}{\partial h_{22}}. \frac{\partial h_{22}}{\partial a_{222}}.\frac{\partial a_{22}}{\partial \omega_{222}}\\
+							&= \frac{\partial L}{\partial a_{31}}.\frac{\partial a_{31}}{\partial h_{22}} \frac{\partial h_{22}}{\partial a_{22}}.\frac{\partial a_{22}}{\partial \omega_{222}}\\
+							&= \frac{\partial L}{\partial \hat{y_{i}}}.\frac{\partial \hat{y_{i}}}{\partial a_{31}}. \frac{\partial a_{31}}{\partial h_{22}} \frac{\partial h_{22}}{\partial a_{22}}.\frac{\partial a_{22}}{\partial \omega_{222}}\\
+							
 \end{aligned}
 $$
 
