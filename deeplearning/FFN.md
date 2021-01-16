@@ -1,7 +1,6 @@
 {% include lib/mathjax.html %}
 
-##Feedforward Neural Networks
-
+## Feedforward Neural Networks
 
 These network of models are called feedforward because the information moves forward from the input nodes to the hidden layers and then to the output nodes.
 
@@ -19,11 +18,11 @@ $$ a_{i} = W_{i}h_{i-1}(x) + b_{i}$$
 
 h is the activation function which is given by the sigmoid function
 
-$$ h_{i}  = \frac{1}{e^{-a_{i}} $$
+$$ h_{i}  = \frac{1}{e^{-a_{i}}} $$
 
 We get the final output by applying the softmax function:
 
-$$\hat{y_{i}} = \frac{e^{a_{1}}}{\sum_{j=1}^k e^{a_{j}}$$
+$$\hat{y_{i}} = \frac{e^{a_{1}}}{\sum_{j=1}^k e^{a_{j}}}$$
 
 The predicted output is the probability distribution $$\hat{y_{i}}$$ which can be compared with the true probability distribution y. This loss measure is the cross entropy and is given by :
 
@@ -39,7 +38,7 @@ Optimum values of w and b are calculated using the optimization method called gr
 
 $$ a_{11} = \omega_{111}x_{1} + \omega_{112}x_{2} + b_{11}$$
 
-We have to find \omega and b such that loss is minimized. 
+We have to find $$\omega$$ and b such that loss is minimized. 
 
 $$ (\omega_{222})_{t+1} = (\omega_{222})- \eta \Delta (\omega_{222})_{t}$$
 
