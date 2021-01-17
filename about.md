@@ -2,9 +2,9 @@ I'm a Data Science and Machine Learning enthusiast who loves to learn various co
 
 The content of this website are just notes that I made from the courses I took or the resources I read from and are no means a comprehensive overview. 
 
-Most of the content in these posts are from :\
-* Micromasters in DataScience (_UCSD_) on edX\
-* DeepLearning(_Padhai OneFourthLabs_)\
+Most of the content in these posts are from :
+* Micromasters in DataScience (_UCSD_) on edX
+* DeepLearning(_Padhai OneFourthLabs_)
 * Wikipedia/ youtube/ medium where ever I could get information from.
 
 
