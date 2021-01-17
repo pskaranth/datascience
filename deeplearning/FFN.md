@@ -12,7 +12,7 @@ Structure of a neuron :
 
 <p align="center"><img src="../img/FFN.png" width="300px" height="240px"></p>
 
-a is Pre-activation function is the weighted sum of inputs and can be given by :
+a is the Pre-activation function. It is the weighted sum of inputs and is be given by :
 
 $$ a_{i} = W_{i}h_{i-1}(x) + b_{i}$$
 
@@ -36,7 +36,7 @@ Optimum values of w and b are calculated using the optimization method called gr
 
 <p align="center"><img src="../img/BP.png" width="300px" height="240px"></p>
 
-$$ a_{11} = \omega_{111}x_{1} + \omega_{112}x_{2} + b_{11}$$
+$$ a_{11} = \omega_{111}x_{1} + \omega_{112}x_{2} + \omega_{113}x_{3} + .. + b_{11}$$
 
 We have to find $$\omega$$ and b such that loss is minimized. 
 
