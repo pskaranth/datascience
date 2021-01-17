@@ -18,9 +18,9 @@ We evaluate $$E(X^{2}) = p.1^{2} - (1-p).0^{2}  = p$$\
 $$V(X) = p - p^{2} = p(1-p) = pq$$
 
 ## Binomial Distribution
-Distribution of n number of experiments with number of successes(k), probability p and number of failures (n-k) with probability (1-p).\
+Distribution of n number of experiments which has number of successes(k) with probability p and number of failures (n-k) with probability (1-p).\
 Each sequence has probability $$p^{k}.q^{n-k}$$\
-Nmmber of such sequence is given by $$\binom nk$$\
+Number of such sequence is given by $$\binom nk$$\
 Hence the over all distribution can be given by $$b_{p,n}k= \binom nk p^{k}.q^{n-k}$$
 
 Expectation\
@@ -32,8 +32,8 @@ Variance\
 V(X) = np(1-p)
 
 Applications include :\
-Probability of Rainy Days in a month\
-Positive Reponse to a  treatement.
+-Probability of Rainy Days in a month\
+-Positive Reponse to a  treatement.
 
 ## Poisson Distribution
 It is a discrete probabiity distribution that gives the probability of given number of events occurring in a fixed interval of time or space.\
@@ -66,12 +66,12 @@ Variance\
 E(X)(X-1) = $$\lambda^{2}$$
 
 Applications include:\
-People clicking ads.\
-Daily store customers..
+-People clicking ads.\
+-Daily store customers..
 
 ## Geometric Distribution
 
-It gives the probability that the first occurrence of success requires n independent trials, each with success probability p and failure with probabiity q=(1-p).  
+It gives the probability that the first occurrence of success requires n independent trials, each with success probability p and failure with probability q=(1-p).  
 Probability of nth trial being successful can be given by 
 $$g_{p}(n) = q^{n-1}.p$$
 
