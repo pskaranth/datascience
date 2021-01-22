@@ -1,10 +1,14 @@
-# Classification Algorithms
- It identifies which class a new observation belongs based on the training set whose labels are already known. This is an instance of Supervised learning.
+I'm a Data Science and Machine Learning enthusiast who loves to learn various concepts related to it.
 
-## [Generative modelling](https://pskaranth.github.io/thelearningcurve/generativemodel)
-### Univariate
-### MultiVariate
+The content of this website are just notes that I made from the courses I took or the resources I read from and are no means a comprehensive overview. 
 
-## [K- Nearest Neighbour](https://pskaranth.github.io/thelearningcurve/KNN)
+Most of the content in these posts are from :
+* Micromasters in DataScience (_UCSD_) on edX
+* DeepLearning(_Padhai OneFourthLabs_)
+* Wikipedia/ youtube/ medium where ever I could get information from.
+
+
+My goal is to understand the math behind machine learning algorithms and use it in a project which implements them from scratch using Python.\
+This space will always be _WIP_ ..
 
 
