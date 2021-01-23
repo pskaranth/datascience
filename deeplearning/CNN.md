@@ -8,7 +8,7 @@ The goal of CNN is to reduce the image to a form which is easier to process and 
 CNN uses Kernel/Filter as it's first layer. Kernels are small matrix and can be used for edge detection, blurring or sharpening the image.\
 An image is passed through a Kernel. Each pixel is placed at the center of the kernel and the value of that pixel is re-computed as the weighted sum of its neighbours.
 
-<p align="center"><img src="../img/kernel.png" width="300px" height="240px"></p>
+<p align="center"><img src="../img/kernel.png" width="400px" height="290px"></p>
 
 For getting a blur image as an output, the original image is passed through a 3x3 identity kernel matrix. 
 
@@ -54,7 +54,7 @@ CNN will have all 3 layers :
 * Maxpooling layers 
 * Fully connected layers
 
-<p align="center"><img src="../img/Cnnlayers.png" width="300px" height="240px"></p>
+<p align="center"><img src="../img/Cnnlayers.png" width="500px" height="290px"></p>
 
 Benefits of CNN is that it allows sparse connectivity and weight sharing. It hence require less parameters.\
 The weights used in CNN are in such a way that it predicts the next value giving more weightage to most recent value and less importance to the historical value. If equal weightage is given all the values then it becomes the average of all the values.
