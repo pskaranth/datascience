@@ -26,7 +26,7 @@ F is the filter , P is the padding and S is the Stride
 
 Activation functions are commonly used by CNNs. Some of the activation function are listed below: 
 
---Sigmoid/logistic function clips the input into an interval between 0 and 1.
+--Sigmoid/logistic function clips the input into an interval between 0 and 1.\
 --tanh lies between -1 and 1\
 --ReLU clips negative values to zero while keeping positve values same as before.\
 --Leaky ReLU maps larger negative values to smaller ones by reducing the slope of the mapping function.
