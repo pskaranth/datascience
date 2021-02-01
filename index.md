@@ -5,7 +5,7 @@ The content of this website are notes that I made from the courses I took or the
 Most of the content in these posts are from :
 * Micromasters in DataScience (_UCSD_) on edX
 * DeepLearning(_Padhai OneFourthLabs_)
-* Wikipedia/ youtube/ medium whereever I could get information from.
+* Wikipedia/ youtube/ medium wherever I could get information from.
 
 
 My goal is to understand the math behind machine learning algorithms and use it in a project which implements them from scratch using Python.\
