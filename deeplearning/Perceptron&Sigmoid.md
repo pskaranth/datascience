@@ -101,44 +101,9 @@ The function is given by:
 $$ y = \frac{1}{e^{-\omega x+b}} $$
 
 Output is a real value between 0 and 1. The optimum value of w and b are chosen such that squared error loss is miminized.\
-Using the gradient descent algorithm,
 
-Using Root mean square error loss, we can find w and b such that the loss is minimized:
+Using Mean square error loss, we can find $$\omega $$ and b such that the loss is minimized:
 
 $$ minimize  L(\omega,b) = \sum_{i=1}^nmin||y_{i}-f(x_{i})||^{2} $$
 
-## Gradient Descent Update rule ..
 
-Let's denote loss function (Loss with respect to $$\omega$$ and b) as follows :
-
- $$ L(\omega,b) =  L(\theta) $$
- 
- New loss is less than the old loss and denoting $$ \Delta \theta $$ = u
- 
- $$L(\theta + \eta u) -  L(\theta) < 0 $$
- 
-  Using Taylor series:
- 
- $$L(\theta + \eta u ) = L(\theta) + \eta * u^{T} \nabla_{\theta} L(\theta)$$
- 
-  $$L(\theta + \eta u ) - L(\theta) = \eta * u^{T} \nabla_{\theta} L(\theta)$$
- 
- From the previous equation, this would work only if:
- 
- $$u^{T} \nabla_{\theta} L(\theta)<0 $$
- 
-This can be negative if the cos of angle between $$u^{T}$$ and $$\nabla $$ is equal to -1 , which means they are 180 degrees apart.
-
-This also means that we should choose the direction of the vector opposite to the gradient vector.
-
-Thus parameter update rule can be given by:
-
-$$ \omega_{t+1} = \omega_{t} -\eta \Delta \omega_{t}$$
-
-$$ b_{t+1} = b_{t}-\eta \Delta b_{t}$$
-
-where $$\Delta \omega_{t} = \frac{\partial L(\omega,b)}{\partial \omega}$$
-
-and $$ \Delta b_{t} = \frac{\partial L(\omega,b)}{\partial b} $$
-
- 
