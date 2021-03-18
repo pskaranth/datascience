@@ -100,10 +100,14 @@ The function is given by:
 
 $$ y = \frac{1}{e^{-\omega x+b}} $$
 
-Output is a real value between 0 and 1. The optimum value of w and b are chosen such that squared error loss is miminized.\
+Output is a real value between 0 and 1. The optimum value of w and b are chosen such that squared error loss is miminized.
 
 Using Mean square error loss, we can find $$\omega $$ and b such that the loss is minimized:
 
 $$ minimize  L(\omega,b) = \sum_{i=1}^nmin||y_{i}-f(x_{i})||^{2} $$
+
+Sigmoid neuron is a good attempt at creating a decision boundary that works well for non-linearly separable data by smoothening the decision boundary. But it is not very effective in separating the data. Several such sigmoid layers are used to achieve the non-linearity.
+
+
 
 
