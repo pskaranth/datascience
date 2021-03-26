@@ -35,3 +35,5 @@ Using an analogy of sentiment analysis, we could say that we want to :
 * Selectively read the information added by previous sentiment bearing words.
 * Selectively write the new information from the current word to the new state.
 
+References:
+* DeepLearning - Padhai OneFourthLabs
