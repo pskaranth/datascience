@@ -14,7 +14,7 @@ The weights from the previous output is denoted by W\
 The outout at each layer is $$y_{i}$$\
 s is the state vector which is computed as a function of the outout of the previous output and current input with bias.
 
-If the task is Sequence Classification, then the output $$\hat{y}  is computed for the entire sequence.
+If the task is Sequence Classification, then the output $$\hat{y}$$  is computed for the entire sequence.
 
 $$s_{i} = \sigma(Ux_{i} + Ws_{i-1}+b)$$
 $$\hat{y} = O(Vs_{T} +c)$$ , T accounts for entire length of the inputs.
