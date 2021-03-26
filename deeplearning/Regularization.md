@@ -37,7 +37,7 @@ and
 
 $$\sigma_{j} = \sqrt(\frac{1}{m}\Sigma(h_{ij}-\mu_{j})^{2})$$ 
 
-are computed in every batch where m is the batch size.
+$$\mu_{j} and $$\sigma_{j}$$ are computed in every batch where m is the batch size.
 
 $$h_{ij}norm  = \frac{h_{ij}-\mu_{j}}{\sigma_{j}}$$
 
