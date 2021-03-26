@@ -14,10 +14,10 @@ With L2 norm, the goal is to minimize training error and also the sum of the squ
 $$min L(\theta) = L_{train} \theta + \Omega(\theta) $$
 $$ \theta = [W_{111}, W_{112},..] $$\
 $$ \Omega(\theta) = ||\theta||^{2} = W_{111}^{2} +W_{112}^{2}+...$$\
-$$\Delta W_{ijk} = \frac{\partial L(\theta)}{partial W_{ijk}}$$ \
-$$\Delta W_{ijk} = \frac{\partial L_{train}(\theta)}{partial W_{ijk}} +\frac{\partial \Omega(\theta)}{partial W_{ijk}} $$
+$$\Delta W_{ijk} = \frac{\partial L(\theta)}{\partial W_{ijk}}$$ \
+$$\Delta W_{ijk} = \frac{\partial L_{train}(\theta)}{partial W_{ijk}} +\frac{\partial \Omega(\theta)}{\partial W_{ijk}} $$
 
-$$\frac{\partial \Omega(\theta)}{partial W_{ijk}} = 2W_{ijk}$$
+$$\frac{\partial \Omega(\theta)}{\partial W_{ijk}} = 2W_{ijk}$$
 
 ## Data Augmentation
 
@@ -29,20 +29,29 @@ A patience parameter denoted by p is set. This is the number of epochs where the
 
 ## Batch Normalization
 
-Activation function (_h_)  acts as inputs to the next layer of neural network. It makes sense to normalize these values just like normalizing inputs(x).\
-$$\mu_{j} = \frac{1}{m}\Sigma h_{ij}$$ and \
-$$\sigma_{j} = \sqrt(\frac{1}{m}\Sigma(h_{ij}-\my_{j})^{2})$$ are computed in every batch where m is the batch size.
+Activation function (_h_)  acts as inputs to the next layer of neural network. It makes sense to normalize these values just like normalizing inputs(x).
 
-$$h_{ij}norm  = \frac{h_{ij}-\mu_{j}}{\sigma_{j}}$$\
+$$\mu_{j} = \frac{1}{m}\Sigma h_{ij}$$ 
+
+and
+
+$$\sigma_{j} = \sqrt(\frac{1}{m}\Sigma(h_{ij}-\mu_{j})^{2})$$ 
+
+are computed in every batch where m is the batch size.
+
+$$h_{ij}norm  = \frac{h_{ij}-\mu_{j}}{\sigma_{j}}$$
+
 $$ h_{ij}^{final} = \gamma_{j} h_{ij}^{norm}+\beta_{j}$$
 
 $$\gamma$$ and $$\beta$$ are learned along with other parameters of the network.
-Model has the fliexibility to learn, that is if normalization helps, then have (based on the equation it is equivalent to $$\sigma_{j}$$) $$\gamma_{j} = 1 $$and ($$\mu_{j} = 0 $$)\beta_{j} = 0$$\$$.
+
+Model has the fliexibility to learn, that is if normalization helps, then have (based on the equation it is equivalent to $$\sigma_{j}$$) $$\gamma_{j} = 1 $$ and ($$\mu_{j} = 0 $$) $$\beta_{j} = 0$$\.
 
 * Normalize activation functions ($$h_{j}$$).
-* Allow the flexibility of learning $\gamma$$ and $$\beta$$ . Have appropriate $$\sigma$$ and $$\mu$$ such that over all loss decreases.
+* Allow the flexibility of learning $$\gamma$$ and $$\beta$$ . Have appropriate $$\sigma$$ and $$\mu$$ such that over all loss decreases.
 
 How does it act as a _Regularizer_?
+
 $$\sigma_{j}}$$ and $$\mu_{j}$$ are computed from a mini batch. They contribute towards the noise as they are not computed from the entire data.
 Whenever noise is introduced that leads to better regularization.
 
