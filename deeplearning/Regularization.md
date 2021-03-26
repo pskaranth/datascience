@@ -36,7 +36,7 @@ $$\sigma_{j} = \sqrt(\frac{1}{m}\Sigma(h_{ij}-\my_{j})^{2})$$ are computed in ev
 $$h_{ij}norm  = \frac{h_{ij}-\mu_{j}}{\sigma_{j}}$$\
 $$ h_{ij}^{final} = \gamma_{j} h_{ij}^{norm}+\beta_{j}$$
 
-\gamma and \beta are learned along with other parameters of the network.
+$$\gamma$$ and $$\beta$$ are learned along with other parameters of the network.
 Model has the fliexibility to learn, that is if normalization helps, then have (based on the equation it is equivalent to $$\sigma_{j}$$) $$\gamma_{j} = 1 $$and ($$\mu_{j} = 0 $$)\beta_{j} = 0$$\$$.
 
 * Normalize activation functions ($$h_{j}$$).
