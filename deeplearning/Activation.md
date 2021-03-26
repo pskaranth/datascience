@@ -25,15 +25,14 @@ Since $$ a3 =  \omega_{1} h_{21} + \omega_{2} h_{22} $$
 
 So $$ \frac {\partial a3}{\partial \omega_{1}} $$ and $$ \frac {\partial a3}{\partial \omega_{2}} $$ would be h21 and h22 , which are output of logistic functions and hence cannot be less than 0. 
 
-Thus gradients w.r.t all the weights ($$\Delta \omega_{1}$$, $$Delta \omega_{2}$$) connected to the same neuron are either all positive or all negative. This means that gradients can only move in a certain direction and hence takes very long time to converge. This is the disadvantage of the logistic function being a non-zero centered function.
+Thus gradients w.r.t all the weights ($$\Delta \omega_{1}$$, $$\Delta \omega_{2}$$) connected to the same neuron are either all positive or all negative. This means that gradients can only move in a certain direction and hence takes very long time to converge. This is the disadvantage of the logistic function being a non-zero centered function.
 
 ## Tanh 
 
 To have the benefits of the logistic function along with zero-centered nature tanh was introduced. It is a non-linear activation function that clips outputs between [-1,1]
 
-$$ f(x) = \frac{ e^{x}-e{-x}}{e^{x}+e^{-x}}$$
-
-$$ f'(x) = (1-f(x)^{2})
+$$ f(x) = \frac{ e^{x}-e{-x}}{e^{x}+e^{-x}}$$\
+$$ f'(x) = (1-f(x)^{2})$$
 
 Tanh saturates at maximum/minimum values and hence has vanishing gradients problem just like logistic function. Gradients are not restricted to move in certain directions as they are zero centered. They are still computationally intensive because of exponential values.
 
@@ -53,7 +52,7 @@ Consider,
 $$h_{1} $$= $$Relu(a_{1})$$ = $$max(0,a_{1})$$\
 $$h1 = max(0,\omega_{1} x_{1}+\omega_{2}x_{2}+b)$$
 
-If b takes on a highly negative value, then h1->0 , $$\frac{\partial h1}{\partial a1}->0 $$ \
+If b takes on a highly negative value, then h1->0 , $$\frac{\partial h1}{\partial a1}$$->0 \
 This causes $$\omega_{1}$$ , $$\omega_{2}$$ and b to have no updates causing a _Dead Neuron_
 
 It does not saturate in the positive region, hence avoids vanishing gradient problem. It is computationally faster and converges earlier than logistic or tanh.
