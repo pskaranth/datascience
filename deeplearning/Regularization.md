@@ -15,7 +15,7 @@ $$min L(\theta) = L_{train} \theta + \Omega(\theta) $$
 $$ \theta = [W_{111}, W_{112},..] $$\
 $$ \Omega(\theta) = ||\theta||^{2} = W_{111}^{2} +W_{112}^{2}+...$$\
 $$\Delta W_{ijk} = \frac{\partial L(\theta)}{\partial W_{ijk}}$$ \
-$$\Delta W_{ijk} = \frac{\partial L_{train}(\theta)}{partial W_{ijk}} +\frac{\partial \Omega(\theta)}{\partial W_{ijk}} $$
+$$\Delta W_{ijk} = \frac{\partial L_{train}(\theta)}{\partial W_{ijk}} +\frac{\partial \Omega(\theta)}{\partial W_{ijk}} $$
 
 $$\frac{\partial \Omega(\theta)}{\partial W_{ijk}} = 2W_{ijk}$$
 
@@ -52,7 +52,7 @@ Model has the fliexibility to learn, that is if normalization helps, then have (
 
 How does it act as a _Regularizer_?
 
-$$\sigma_{j}}$$ and $$\mu_{j}$$ are computed from a mini batch. They contribute towards the noise as they are not computed from the entire data.
+$$\sigma_{j}$$ and $$\mu_{j}$$ are computed from a mini batch. They contribute towards the noise as they are not computed from the entire data.
 Whenever noise is introduced that leads to better regularization.
 
 ## Dropout
