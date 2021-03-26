@@ -2,7 +2,7 @@
 
 ## Optimization Algotrithms
 
-Sigmoid Neuron is given by\
+Sigmoid Neuron is given by:
 
 $$ y = \frac{1}{e^{-\omega x+b}} $$
 
@@ -44,9 +44,9 @@ where $$\Delta \omega_{t} = \frac{\partial L(\omega,b)}{\partial \omega}$$
 and $$ \Delta b_{t} = \frac{\partial L(\omega,b)}{\partial b} $$
 
 If squared error loss is considered, then 
-$$L(\theta) = \sum_{i=1}^nmin||y_{i}-f(x_{i})||^{2} $$
+$$L(\theta) = \sum_{i=1}^n min||y_{i}-f(x_{i})||^{2} $$
 
-$$\frac{\partial L(\omega,b)}{\partial \omega}  &= \frac{\partial \sum_{i=1}^nmin||y_{i}-f(x_{i})||^{2}}{\partial \omega} $$
+$$\frac{\partial L(\omega,b)}{\partial \omega}  = \frac{\partial \sum_{i=1}^nmin||y_{i}-f(x_{i})||^{2}}{\partial \omega} $$
 
 $$\begin{aligned}
 \frac{\partial \sum_{i=1}^nmin||y_{i}-f(x_{i})||^{2}}{\partial \omega} &= (y - f(x))\frac{\partial}{\partial \omega}(f(x))\\
@@ -64,13 +64,13 @@ $$ \frac{\partial L(\omega,b)}{\partial \omega}  = \frac{\partial L(\theta)}{\pa
 $$\begin{aligned}
 \frac{\partial L(\theta)}{\partial \hat{y}} &= \frac{\partial (-((1-y)log(1-\hat{y})+ylog\hat{y}))}{\partial \hat{y}} \\
 											&= \frac{\hat{y}-y}{(1-\hat{y})\hat{y}} \\
-\frac{\partial \hat{y} }{\partial \omega} 	&= \frac{\partial}{\partial \omega} (\frac {1}{1+e^{-(\omegax+b)}}) \\	
+\frac{\partial \hat{y} }{\partial \omega} 	&= \frac{\partial}{\partial \omega} (\frac {1}{1+e^{-(\omega x+b)}}) \\	
 										    &= \hat{y} (1- \hat{y}) x\\
 \end{aligned}
 $$
 
 Combining both,
-$$ \frac{\partial L(\theta)}{\partial \omega} &= (\hat{y}-y) x$$	
+$$ \frac{\partial L(\theta)}{\partial \omega} = (\hat{y}-y) x$$	
 
 The gradient descent update rule might take longer time as the rate at which the function is minimized totally depends on the slope. At certain points, it may navigate the slope very slowly to reach the local minima.
 
@@ -82,7 +82,8 @@ This version of gradient descent rule takes larger values of updates to reach th
 
 We have gradient descent update rule as :
 $$ \omega_{t+1} = \omega_{t} -\eta \Delta \omega_{t}$$
-In case of momentum based gradient descent rule :
+
+In case of momentum based gradient descent rule :\
 $$v_{t} = \gamma * v_{t-1} + \eta \Delta \omega_{t}$$
 $$ \omega_{t+1} = \omega_{t} - v_{t}$$
 
@@ -112,14 +113,15 @@ $$ v_{t} = \gamma v_{t-1} +\eta \Delta \omega_{temp}$$
 Using the history we compute the weight $$\omega_{temp} $$ and use it to compute further value of weights.\
 In this case the oscillations are much smaller compared to the above  gradient descent algorithms.
 
-Many features in the real worls are sparse.. Hence it would require higher learning rate for the features which are non-zero so that it has more effects on the weights. For dense features, learning rate needs to be small. Below algorithms have adaptive based learning rate.
+Many features in the real worls are sparse.. Hence it would require higher learning rate for the features which are non-zero so that it has more effects on the weights. For dense features, learning rate needs to be small. Below algorithms accommodate this change and have adaptive based learning rate.
 
 ## Adagrad 
 
 In Adagrad, if there are frequent updates for a parameter, a smaller learning rate is introduced. But for a parameter with less frequency of updates, larger learning rate is used. 
 This is achieved by having a learning rate divided by history of updates.
+
 $$ v_{t} = v_{t-1} + (\Delta \omega)^{2} $$
-$$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}+\epsilon} \Delta \omega  $$
+$$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}}+\epsilon} \Delta \omega  $$
 
 For a parameter with frequent updates it might so happen that after a while it might stop updating $$\omega $$ and b  as the learning rate gets reduced. So the function reaches close to minima but may not converge as expected. 
 
@@ -128,16 +130,16 @@ For a parameter with frequent updates it might so happen that after a while it m
 In this case, the learning rate is reduced at a much lower rate as compared to Adagrad.\
 There is an exponential decaying sum of derivatives for the history component.
 
-$$ v_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega)^{2} $$
-$$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}+\epsilon} \Delta \omega  $$
+$$ v_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega)^{2} $$\
+$$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}}+\epsilon} \Delta \omega  $$
 
 ## Adam 
 
 Adam algorithm combines the idea of both Momentum based and RMS Prop.   
 
-$$ m_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega) $$
-$$ v_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega)^{2} $$
-$$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}+\epsilon} m_{t}  $$
+$$ m_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega) $$\
+$$ v_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega)^{2} $$\
+$$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}}+\epsilon} m_{t}  $$
 
 It ensures that updating of weights considers the history of derivatives ($$m_{t}$$) and also makes sure that learning rate is adaptive.
 
@@ -159,4 +161,4 @@ In the case of Stochastic, we look at one data point, compute the derivative and
 The downside of using mini-batch or stochastic, the true derivative is not computed because the true loss is the total loss over all the data points. The gradient would be the sum of the partial derivatives with respect to all the data points.
 
 References:
---DeepLearning - Padhai OneFourthLabs
+* DeepLearning - Padhai OneFourthLabs
