@@ -8,10 +8,10 @@ It can be used in Sequence modelling where the task is to predict the next word.
 
 <p align="center"><img src="../img/RNN.png" width="300px" height="240px"></p>
 
-The inputs are denoted by x_{i}\
+The inputs are denoted by $$x_{i}$$\
 The weights associated with input x is denoted by U\
-The weights from the previous output is denoted by W.\
-The outout at each layer is y_{i}
+The weights from the previous output is denoted by W\
+The outout at each layer is $$y_{i}$$\
 s is the state vector which is computed as a function of the outout of the previous output and current input with bias.
 
 If the task is Sequence Classification, then the output $$\hat{y}  is computed for the entire sequence.
