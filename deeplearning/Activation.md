@@ -69,8 +69,8 @@ Value 0.01 does not let the derivative to be 0. It does not saturate in positive
 
 ## Why do we need non-linear activation functions in the network?
 
-As we have seen in our example we have,  \
-* _a_: It is a weighted sum of inputs plus the bias. This is given by wx+b.\
+As we have seen in our example we have,  
+* _a_: It is a weighted sum of inputs plus the bias. This is given by wx+b.
 * _h_: This is the activation function which introduces non-linearity.  $$ h = \sigma(a)$$
 
 Instead of applying the non-linear activation function(h),if we apply just the linear transformation to the output of pre-activation; the output we get is just a product of all weights.
@@ -102,5 +102,5 @@ This is used in case of RelU and leaky RelU as half of the neurons in the negati
 $$ W  \propto \frac{1}{sqrt(n/2)}$$
 
 
-References:\
+References:
 * DeepLearning - Padhai OneFourthLabs
