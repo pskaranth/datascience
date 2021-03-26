@@ -41,10 +41,8 @@ Tanh saturates at maximum/minimum values and hence has vanishing gradients probl
 
 ReLU  clips negative values to zero while keeping positve values same as before. It is not a zero-centered function. 
 
-$$ f(x) = max (0,x) $$ 
-
-$$
-f'(x)= $$\begin{cases}
+$$ f(x) = max (0,x) $$ \
+f'(x) = $$\begin{cases}
 		0 \hspace{1cm} if x<0 \\
 		1 \hspace{1cm} if x>0\\
 		\end{cases}
@@ -52,8 +50,9 @@ $$
 
 Consider, 
 
-$$h_{1} = Relu(a_{1})$$ = max(0,a_{1})$$\
-$$h1= max(0,\omega_{1} x_{1}+\omega_{2}x_{2}+b)$$\
+$$h_{1} $$= $$Relu(a_{1})$$ = $$max(0,a_{1})$$\
+$$h1 = max(0,\omega_{1} x_{1}+\omega_{2}x_{2}+b)$$
+
 If b takes on a highly negative value, then h1->0 , $$\frac{\partial h1}{\partial a1}->0 $$ \
 This causes $$\omega_{1}$$ , $$\omega_{2}$$ and b to have no updates causing a _Dead Neuron_
 
@@ -63,10 +62,9 @@ It does not saturate in the positive region, hence avoids vanishing gradient pro
 
 This is a variant of Relu. Leaky ReLU maps larger negative values to smaller ones by reducing the slope of the mapping function.
 
-$$ f(x) = max (0.01x,x) $$
-
+$$ f(x) = max (0.01x,x) $$\
 f'(x)= $$\begin{cases}
-		0.01 \hspace{1cm} if x<0 \\
+	     0.01 \hspace{1cm} if x<0 \\
 		1 \hspace{1cm} if x>0\\
 		\end{cases}
 $$
