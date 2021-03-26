@@ -50,7 +50,7 @@ $$\frac{\partial L(\omega,b)}{\partial \omega}  = \frac{\partial \sum_{i=1}^nmin
 
 $$\begin{aligned}
 \frac{\partial \sum_{i=1}^nmin||y_{i}-f(x_{i})||^{2}}{\partial \omega} &= (y - f(x))\frac{\partial}{\partial \omega}(f(x))\\
-																	   &= (y - f(x))\frac{\partial}{\partial \omega}(\frac {1}{1+e^{-(\omegax+b)}}) \\
+																	   &= (y - f(x))\frac{\partial}{\partial \omega}(\frac {1}{1+e^{-(\omega x+b)}}) \\
 																	   &= (y - f(x))*(f(x)(1-f(x)x)\\
 \end{aligned}
 $$
@@ -121,6 +121,7 @@ In Adagrad, if there are frequent updates for a parameter, a smaller learning ra
 This is achieved by having a learning rate divided by history of updates.
 
 $$ v_{t} = v_{t-1} + (\Delta \omega)^{2} $$
+
 $$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}}+\epsilon} \Delta \omega  $$
 
 For a parameter with frequent updates it might so happen that after a while it might stop updating $$\omega $$ and b  as the learning rate gets reduced. So the function reaches close to minima but may not converge as expected. 
@@ -130,15 +131,18 @@ For a parameter with frequent updates it might so happen that after a while it m
 In this case, the learning rate is reduced at a much lower rate as compared to Adagrad.\
 There is an exponential decaying sum of derivatives for the history component.
 
-$$ v_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega)^{2} $$\
+$$ v_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega)^{2} $$
+
 $$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}}+\epsilon} \Delta \omega  $$
 
 ## Adam 
 
 Adam algorithm combines the idea of both Momentum based and RMS Prop.   
 
-$$ m_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega) $$\
-$$ v_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega)^{2} $$\
+$$ m_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega) $$
+
+$$ v_{t} =\beta v_{t-1} + (1- \beta)(\Delta \omega)^{2} $$
+
 $$ \omega_{t+1} = \omega_{t} -\frac{\eta}{\sqrt{v_{t}}+\epsilon} m_{t}  $$
 
 It ensures that updating of weights considers the history of derivatives ($$m_{t}$$) and also makes sure that learning rate is adaptive.
