@@ -39,7 +39,7 @@ Using an analogy of sentiment analysis, we could say that we want to :
 ## Long Short Term Memory networks (LSTM) 
 In order to acheive the goal of selectively read, write and forget; we use LSTM. It composes of 3 gates: input, output and forget gates which controls the flow of data.
 
-### 1. Selectively write 
+#### 1. Selectively write 
 We have at every time step ,\
 $$s_{i} = \sigma(Ux_{t} + Ws_{t-1}+b)$$
 
@@ -56,12 +56,12 @@ $$ h_{t-1} = s_{t-1} \odot o_{t-1}$$
 Using $$h_{t-1}$$ and and the input of the current layer $$x_{t}$$ we compute an intermediate layer $$\tilde{s_{t}}$$ .\
 $$\tilde{s_{t}} = \sigma W (h_{t-1} + U x_{t} + b )$$
 
-### 2. Selectively read
+#### 2. Selectively read
 We have an input gate $$i_{t}$$ which performs operation with $$\tilde{s_{t}}$$ to selectively read required inputs.
  
 $$i_{t} = \sigma(U_{i}x_{t} + W_{i}h_{t-1}+b_{i})$$
 
-### 3. Selectively forget
+#### 3. Selectively forget
 $$f_{t}$$ is called the forget gate , This again decides what fraction of $$s_{t-1}$$ should be retained in computing $$s_{t}$$
 
 $$f_{t} = \sigma(U_{f}x_{t} + W_{f}h_{t-1}+b_{f})$$
