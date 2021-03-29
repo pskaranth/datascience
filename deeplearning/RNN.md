@@ -35,9 +35,12 @@ Using an analogy of sentiment analysis, we could say that we want to :
 * Selectively read the information added by previous sentiment bearing words.
 * Selectively write the new information from the current word to the new state.
 
+<p align="center"><img src="../img/LSTM_1.png" width="300px" height="270px"></p>
 
 ## Long Short Term Memory networks (LSTM) 
 In order to acheive the goal of selectively read, write and forget; we use LSTM. It composes of 3 gates: input, output and forget gates which controls the flow of data.
+
+<p align="center"><img src="../img/LSTM.png" width="400px" height="280px"></p>
 
 #### 1. Selectively write 
 We have at every time step ,\
