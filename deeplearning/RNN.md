@@ -66,9 +66,15 @@ $$f_{t}$$ is called the forget gate , This again decides what fraction of $$s_{t
 
 $$f_{t} = \sigma(U_{f}x_{t} + W_{f}h_{t-1}+b_{f})$$
 
+Combining input and the forget gates, we compute the final $$s_{t}$$
+
 $$s_{t}= \tilde{s_{t}} \odot i_{t} + s_{t-1} \odot f_{t}  $$
 
+Selective write is performed again,
+
 $$ h_{t} = o_{t} \odot s_{t}$$
+
+Final output is obtained as below:
 
 $$ \hat{y} = O(Vh_{t}+c) $$
 
