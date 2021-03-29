@@ -11,8 +11,8 @@ It can be used in Sequence modelling where the task is to predict the next word.
 The inputs are denoted by $$x_{i}$$\
 The weights associated with input x is denoted by U\
 The weights from the previous output is denoted by W\
-The outout at each layer is $$y_{i}$$\
-s is the state vector which is computed as a function of the outout of the previous output and current input with bias.
+The output at each layer is $$y_{i}$$\
+s is the state vector which is computed as a function of the output of the previous output and current input with bias.
 
 If the task is Sequence Classification (For example: sentiment analysis), then the output $$\hat{y}$$  is computed for the entire sequence.
 
@@ -26,9 +26,7 @@ $$\hat{y} = O(Vs_{i} +c)$$
 
 Depending on the learning problem the output y can be computed for the entire sequence or at each and every layer.
 
-The state vector (s) is of fixed size and at every step the information is computed. If a very long sequence is considered, the first input gets morphed into something else and it is difficult to know it's contribution to the state vector by the time it reaches the end of sequence.\
-
-Also when training RNN using back-propogation, gradients either vanish or explode.
+The state vector (s) is of fixed size and at every step the information is computed. If a very long sequence is considered, the first input gets morphed into something else and it is difficult to know it's contribution to the state vector by the time it reaches the end of sequence. Also when training RNN using back-propogation, gradients either vanish or explode.
 
 So the goal is to selectively read, write and forget inputs we won't need so that the finite size for RNN can be maintained.
 
@@ -39,9 +37,9 @@ Using an analogy of sentiment analysis, we could say that we want to :
 
 
 ## Long Short Term Memory networks (LSTM) 
-In order to acheive the goal of selectively read, write and forget; we use LSTM. It composes of 3 gates: input, outputput and forget gates which controls the flow of data.
+In order to acheive the goal of selectively read, write and forget; we use LSTM. It composes of 3 gates: input, output and forget gates which controls the flow of data.
 
-* Selectively write 
+### 1. Selectively write 
 We have at every time step ,\
 $$s_{i} = \sigma(Ux_{t} + Ws_{t-1}+b)$$
 Instead of passing $$s_{t-1}$$ as it is to $$s_{t}$$ , only pass certain fraction of the previous state to the current state.
@@ -52,34 +50,36 @@ $$o_{t-1}$$ is the output gate and has the value between 0 and 1 suggesting the 
 
 $$o_{t-1} = \sigma(U_{o}x_{t-1} + W_{o}h_{t-2}+b_{o})$$
 
-$$s_{t-1} \odot o_{t-1} = h_{t-1}$$
+$$ h_{t-1} = s_{t-1} \odot o_{t-1}$$
 
 Using $$h_{t-1}$$ and and the input of the current layer $$x_{t}$$ we compute an intermediate layer $$\tilde{s_{t}}$$ .\
-$$\tilde{s_{t}} = \sigma (W (h_{t-1} + U x_{t} + b$$\
+$$\tilde{s_{t}} = \sigma W (h_{t-1} + U x_{t} + b$$
 
-* Selectively read
+### 2. Selectively read
 We have an input gate $$i_{t}$$ which performs operation with $$\tilde{s_{t}}$$ to selectively read required inputs.
  
 $$i_{t} = \sigma(U_{i}x_{t} + W_{i}h_{t-1}+b_{i})$$
 
-* Selectively forget
+### 3. Selectively forget
 $$f_{t}$$ is called the forget gate
+
 $$f_{t} = \sigma(U_{f}x_{t} + W_{f}h_{t-1}+b_{f})$$
 
 $$s_{t}= \tilde{s_{t}} \odot i_{t} + s_{t-1} \odot f_{t}  $$
 
-$$ h_{t} = o_{t}\ odot s_{t}$$
-$$ \hat{y} = O(Vh_{t}+c)
+$$ h_{t} = o_{t} \odot s_{t}$$
+
+$$ \hat{y} = O(Vh_{t}+c) $$
 
 LSTM has many variants which include different number of gates, one such variant is Gated Recurrent Unit (GRU).\
 GRU, it is similar to LSTM seen above in structure but without a forget gate and hence requires less number of parameters as compared to normal LSTM.\
 Gates:\
-$$o_{t} = \sigma(U_{o}x_{t} + W_{o}s_{t-1}+b_{o})$$\
-$$i_{t} = \sigma(U_{i}x_{t} + W_{i}s_{t-1}+b_{i})$$
+$$o_{t} = \sigma(U_{o}x_{t} + W_{o}s_{t-1} + b_{o})$$\
+$$i_{t} = \sigma(U_{i}x_{t} + W_{i}s_{t-1} + b_{i})$$
 
 States:\
-$$\tilde{s_{t}} = \sigma (W (o_{t} \ odot s_{t-1}) + U x_{t}+b$$\
-$$s_{t}= (1-i_{t})\ odot s_{t-1} + i_{t} \ odot \tilde{s_{t}} $$ 
+$$\tilde{s_{t}} = \sigma (W (o_{t} \odot s_{t-1}) + U x_{t} + b )$$\
+$$s_{t}= (1-i_{t}) \odot s_{t-1} + i_{t} \odot \tilde{s_{t}} $$ 
 
 LSTM is well developed to deal with vanishing gradient problem. It allows gradients to flow unchanged, but can suffer from exploding gradients.
 
