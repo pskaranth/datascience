@@ -53,7 +53,8 @@ $$o_{t-1} = \sigma(U_{o}x_{t-1} + W_{o}h_{t-2}+b_{o})$$
 
 $$ h_{t-1} = s_{t-1} \odot o_{t-1}$$
 
-Using $$h_{t-1}$$ and and the input of the current layer $$x_{t}$$ we compute an intermediate layer $$\tilde{s_{t}}$$ .\
+Using $$h_{t-1}$$ and and the input of the current layer $$x_{t}$$ we compute an intermediate layer $$\tilde{s_{t}}$$ .
+
 $$\tilde{s_{t}} = \sigma W (h_{t-1} + U x_{t} + b )$$
 
 #### 2. Selectively read
