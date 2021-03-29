@@ -42,6 +42,7 @@ In order to acheive the goal of selectively read, write and forget; we use LSTM.
 ### 1. Selectively write 
 We have at every time step ,\
 $$s_{i} = \sigma(Ux_{t} + Ws_{t-1}+b)$$
+
 Instead of passing $$s_{t-1}$$ as it is to $$s_{t}$$ , only pass certain fraction of the previous state to the current state.
 
 An intermediate layer $$h_{t-1}$$ is computed based on $$s_{t-1}$$ and $$o_{t-1}$$ 
@@ -53,7 +54,7 @@ $$o_{t-1} = \sigma(U_{o}x_{t-1} + W_{o}h_{t-2}+b_{o})$$
 $$ h_{t-1} = s_{t-1} \odot o_{t-1}$$
 
 Using $$h_{t-1}$$ and and the input of the current layer $$x_{t}$$ we compute an intermediate layer $$\tilde{s_{t}}$$ .\
-$$\tilde{s_{t}} = \sigma W (h_{t-1} + U x_{t} + b$$
+$$\tilde{s_{t}} = \sigma W (h_{t-1} + U x_{t} + b )$$
 
 ### 2. Selectively read
 We have an input gate $$i_{t}$$ which performs operation with $$\tilde{s_{t}}$$ to selectively read required inputs.
@@ -61,7 +62,7 @@ We have an input gate $$i_{t}$$ which performs operation with $$\tilde{s_{t}}$$ 
 $$i_{t} = \sigma(U_{i}x_{t} + W_{i}h_{t-1}+b_{i})$$
 
 ### 3. Selectively forget
-$$f_{t}$$ is called the forget gate
+$$f_{t}$$ is called the forget gate , This again decides what fraction of $$s_{t-1} should be retained in computing $$s_{t}$$$$
 
 $$f_{t} = \sigma(U_{f}x_{t} + W_{f}h_{t-1}+b_{f})$$
 
