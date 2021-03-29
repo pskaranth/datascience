@@ -18,7 +18,7 @@ For negative samples ; w.x+b <= -1
 This can written with one equation as y(w.x+b) >= 1 with y taking values +1 or -1.\
 For the points in the margin it is y(w.x+b)-1 = 0 
 
-<p align="center"><img src="../img/SVM.png" width="300px" height="240px"></p>
+<p align="center"><img src="../img/SVM.png" width="340px" height="240px"></p>
 
 So we can see that if the points are linearly separable then the hyperplane is able to distinguish between the points and outliers are incorrectly  classified.\
 This type of SVM is called as _hard margin SVM_.
