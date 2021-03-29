@@ -40,7 +40,7 @@ Using an analogy of sentiment analysis, we could say that we want to :
 ## Long Short Term Memory networks (LSTM) 
 In order to acheive the goal of selectively read, write and forget; we use LSTM. It composes of 3 gates: input, output and forget gates which controls the flow of data.
 
-<p align="center"><img src="../img/LSTM.png" width="400px" height="280px"></p>
+<p align="center"><img src="../img/LSTM.png" width="600px" height="300px"></p>
 
 #### 1. Selectively write 
 We have at every time step ,\
