@@ -76,7 +76,7 @@ $$s_{t}= \tilde{s_{t}} \odot i_{t} + s_{t-1} \odot f_{t}  $$
 
 Selective write is performed again,
 
-$$ h_{t} = o_{t} \odot s_{t}$$
+$$ h_{t} = o_{t} \odot \sigma(s_{t})$$
 
 Final output is obtained as below:
 
