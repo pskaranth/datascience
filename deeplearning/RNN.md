@@ -62,7 +62,7 @@ We have an input gate $$i_{t}$$ which performs operation with $$\tilde{s_{t}}$$ 
 $$i_{t} = \sigma(U_{i}x_{t} + W_{i}h_{t-1}+b_{i})$$
 
 ### 3. Selectively forget
-$$f_{t}$$ is called the forget gate , This again decides what fraction of $$s_{t-1} should be retained in computing $$s_{t}$$$$
+$$f_{t}$$ is called the forget gate , This again decides what fraction of $$s_{t-1}$$ should be retained in computing $$s_{t}$$
 
 $$f_{t} = \sigma(U_{f}x_{t} + W_{f}h_{t-1}+b_{f})$$
 
