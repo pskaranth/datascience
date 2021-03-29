@@ -14,7 +14,9 @@ Projections which have the largest variance is the first principal component, se
 
 Consider a 2 dimensional data set below with $$x_{1}$$ and $$x_{2}$$ features. The goal is to reduce the dimension from 2D to 1D.
 We project points onto the line by finding the closest points on the line. We replace the point by the length of the line(projection).
-<p align="center"><img src="img/PCA.png" width="300px" height="240px"></p>
+
+<p align="center"><img src="img/PCA.png" width="280px" height="220px"></p>
+
 The 2D points are replaced by the length of line shown in blue. The direction of the line is the direction of the _maximum variance_.
 
 Mathematically this can be explained below.
