@@ -1,4 +1,4 @@
-Goal: To implement Generative Model from scratch inorder to classify the data.
+Goal: To implement Generative Model algorithm and to classify seed kernels.
 
 Number of errors decreases based on the number of features used at each time.(Terms Univariate, BiVariate and MultiVariate denotes the number of features used at each time.)
 
