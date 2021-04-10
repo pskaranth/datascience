@@ -2,7 +2,8 @@
 
 ### DeepLearning 
 
->Using **RNN** as Sequence model for predicting Nationality based on names.
+>Using **RNN** as Sequence model for predicting Nationality based on names.\
+>Link to the repo:  [RNN_name2nat](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN)
 
 ### Classification Algorithms
 
