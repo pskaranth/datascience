@@ -1,1 +1,6 @@
-Dummy content
+Using RNN as Sequence model for predicting Nationality based on names.
+
+About dataset: name2lang contains of list of names and respective nationalities.
+Dataset was provided in Padhai OneFourthLabs, Deep Learning course.
+
+
