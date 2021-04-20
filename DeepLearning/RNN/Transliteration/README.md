@@ -8,7 +8,7 @@ Used GRU for Encoder and Decoder Models.
 About the Dataset
 https://www.microsoft.com/en-us/research/publication/report-of-news-2012-machine-transliteration-shared-task/
 
-
+```
 Publication:  “Report of NEWS 2012 machine transliteration shared task”
 @inproceedings{Zhang:2012:RNM:2392777.2392779,
 author = {Zhang, Min and Li, Haizhou and Kumaran, A. and Liu, Ming},
@@ -24,4 +24,4 @@ acmid = {2392779},
 publisher = {Association for Computational Linguistics},
 address = {Stroudsburg, PA, USA},
 }
-
+```
