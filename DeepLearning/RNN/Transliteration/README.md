@@ -1,6 +1,6 @@
 
 Goal : Project to transliterate English to Hindi using Encoder-Decoder Attention Mechansim.
-Encoder and Decoder with attention seems to be better at loss and thus better at transliterating English to Hindi words.
+Encoder and Decoder with attention seems to be better at reducing loss and thus better at transliterating English to Hindi words.
 Used GRU for Encoder and Decoder Models.
 
 
