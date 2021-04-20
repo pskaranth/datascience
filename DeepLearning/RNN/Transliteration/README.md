@@ -29,6 +29,7 @@ address = {Stroudsburg, PA, USA},
 Used the modeling code for Encoder-Decoder model provided in DeepLearning - Padhai OneFourthLabs.
 
 Issues faced:
+
 1.
 RuntimeError: Input and hidden tensors are not at the same device, found input tensor at cpu and hidden tensor at cuda:0
 
