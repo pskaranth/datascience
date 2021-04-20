@@ -30,20 +30,17 @@ Used the modeling code for Encoder-Decoder model provided in DeepLearning - Padh
 
 Issues faced:
 
-1.
-RuntimeError: Input and hidden tensors are not at the same device, found input tensor at cpu and hidden tensor at cuda:0
+1. RuntimeError: Input and hidden tensors are not at the same device, found input tensor at cpu and hidden tensor at cuda:0
 
 https://stackoverflow.com/questions/58095627/how-to-fix-input-and-hidden-tensors-are-not-at-the-same-device-in-pytorch
 
 This error occurs when PyTorch tries to compute an operation between a tensor stored on a CPU and one on a GPU. At a high level there are two types of tensor - those of your data, and those of the parameters of the model, and both can be copied to the same device like so:
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-data = data.to(device)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")\
+data = data.to(device)\
 model = model.to(device)
 
-2.
-"scatter_(): Expected dtype int64 for index." at one_hot.scatter_(2, max_idx, 1) 
+2. "scatter_(): Expected dtype int64 for index." at one_hot.scatter_(2, max_idx, 1) 
 
 hindi_enc = torch.zeros([len(word_)+1,1],dtype=torch.long).to(device)
 
