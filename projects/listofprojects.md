@@ -3,8 +3,8 @@
 
 ### DeepLearning 
 
->**Encoder-Decoder models** using RNN(GRU) for Trasliteration of English to Hindi.\
->Link to the repo:  [Transliteration](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Transliteration)
+>Transliteration using **Encoder-Decoder models** .\
+>Link to the repo:  [Transliteration](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Transliteration)\
 >Enoder-Decoder with Attention was better at performance.
 
 >Using **RNN** as Sequence model for predicting Nationality based on names.\
