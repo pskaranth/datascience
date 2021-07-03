@@ -1,7 +1,8 @@
 {% include lib/mathjax.html %}
 
-## Recurrent Neural Networks
+## Recurrent Neural Networks (RNN)
 
+RNNs are neural network having sequential data where in output of one layer is fed to the next layer.\
 RNN is recurrent as it evaluates the same function for the input at each layer. Subsequent outputs not only depends on the current input but also on the previous inputs.
 
 It can be used in Sequence modelling where the task is to predict the next word. This is done by computing the probability of the occurence of the words in the sequence by taking into account the current and the previous word.
