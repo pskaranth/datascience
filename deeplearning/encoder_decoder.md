@@ -20,21 +20,21 @@ This is _Attention mechanism_. It identifies parts of the input sequence which a
 
 The goal is to compute a _Context Vector_. This is a weighted sum of all the (encoded RNN state at jth time step )inputs(_h_) and the importance of the word(_α_) at the $$t^{th}$$ timestep.
 
-$$c_{j} =\sum_{j=1}^T α_{jt} h_{j}) $$  
+$$c_{j} =\sum_{j=1}^T α_{jt} h_{j} $$  ------>3
 
 The parameter $$α_{jt}$$ used above has to be learned from the data. It denotes the probability of focusing on the jᵗʰ word to produce the tᵗʰ output word.\
 It is the softmax function of $$e_{jt}$$
 
-$$α_{jt} = \frac{exp(e_{jt})}{\sum_{i=1}^n exp(e_{jt})}$$
+$$α_{jt} = \frac{exp(e_{jt})}{\sum_{i=1}^n exp(e_{jt})}$$ ----->2
 
 Parameter $$e_{jt}$$ depends on the current state(_s_) of the decoder and the encoder output state(_h_).\
-To enable this we define a function,\
+To enable this we define a function,
 
 $$e_{jt} = f_{ATT}(s_{t-1},h_{j})$$
 
 The most commonly used parametric form or function to compute the ejt is given below:
 
-$$ e_{jt}= V^{T}_{att}(U_{att}s_{t-1}+W_{att}h_{j})$$
+$$ e_{jt}= V^{T}_{att}(U_{att}s_{t-1}+W_{att}h_{j})$$ ----->1
 
 
 To learn the parameter ejt, we have introduced additional parameters Vₐtt, Uₐtt and Wₐtt. Where Uₐtt denotes weights associated with the input of an encoder, Wₐtt denotes weights associated with the decoder hidden state and Vₐtt denotes weights associated with the output of a decoder. These parameters will also be learned along with other parameters of the encoder-decoder model.
@@ -45,7 +45,7 @@ Some examples where encoder-decoder models could be used:
 
 Given the t-i words we would like to predict the value of $$t^{th}$$ word.
 
-We want to compute $$ y^{*} = argmax P(y_{t}| y_{1},y_{2},..y_{t-1})$$
+We want to compute $$ y = argmax P(y_{t}| y_{1},y_{2},..y_{t-1})$$
 
 RNN encodes inputs to the state vector $$s_{t}$$ and gets passed on . The final step uses the feed forward network and decodes the output to predict the next word.
 
