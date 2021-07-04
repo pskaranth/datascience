@@ -1,7 +1,8 @@
 ## List of Projects
 
-
-### DeepLearning 
+>Machine Translation task for a competition hosted in kaggle by Bristol-Myers Squibb.\
+>Encoder-Decoder model was used to obtain chemical formula based on the images.\
+>Link to the repo: [BMS-Kaggle](https://github.com/pskaranth/tree/master/encoder-decoder/BMS_Kaggle)
 
 >Transliteration using **Encoder-Decoder models** .\
 >Link to the repo:  [Transliteration](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Transliteration)\
@@ -9,8 +10,6 @@
 
 >Using **RNN** as Sequence model for predicting Nationality based on names.\
 >Link to the repo:  [RNN_name2nat](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Name2Nat)
-
-### Classification Algorithms
 
 >**K_nearest Neigbor** : Implementing KNearest Neighbor from scratch. \
 >Link to the repo:  [KNN_MNIST](https://github.com/pskaranth/thelearningcurve/tree/master/Classification/KNN)
