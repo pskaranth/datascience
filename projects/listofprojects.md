@@ -4,8 +4,9 @@
 >Link to the repo:  [EDA_PySpark](https://github.com/pskaranth/EDA_PySpark)
 
 >Machine Translation task for a competition hosted in kaggle by Bristol-Myers Squibb.\
+>Link to the repo: [BMS-Translate](https://github.com/pskaranth/encoder-decoder)
 >Encoder-Decoder model was used to obtain chemical formula based on the images.\
->Link to the repo: [BMS-Kaggle](https://github.com/pskaranth/encoder-decoder)
+
 
 >Transliteration using **Encoder-Decoder models** .\
 >Link to the repo:  [Transliteration](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Transliteration)\
