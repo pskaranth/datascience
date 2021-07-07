@@ -1,7 +1,7 @@
 ## List of Projects
 
 
->Exploratory Data Analysis using Pyspark.\
+>Exploratory Data Analysis using **Pyspark**.\
 >Link to the repo:  [EDA_PySpark](https://github.com/pskaranth/EDA_PySpark)
 
 >Machine Translation task for a competition hosted in kaggle by Bristol-Myers Squibb.\
@@ -13,7 +13,7 @@
 >Link to the repo:  [Transliteration](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Transliteration)\
 >Enoder-Decoder with Attention was better at performance.
 
->Using RNN as Sequence model for predicting Nationality based on names.\
+>Using **RNN** as Sequence model for predicting Nationality based on names.\
 >Link to the repo:  [RNN_NameToNationality](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Name2Nat)
 
 #### Basic implementation of algorithms:
