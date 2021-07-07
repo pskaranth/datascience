@@ -7,6 +7,7 @@ Most of the content in these posts are from :
 * DeepLearning(_Padhai OneFourthLabs_)
 * Wikipedia/ youtube/ medium wherever I could get information from.
 
+In my spare time, I have built and learnt about various machine learning tasks/projects such as Encoder-Decoder models, NLP, Regression tasks, Ensemble models..
 
-My goal is to understand the math behind machine learning algorithms and use it in a project which implements them from scratch using Python.\
-This space will always be _WIP_ ..
+
+
