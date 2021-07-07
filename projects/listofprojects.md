@@ -1,5 +1,6 @@
 ## List of Projects
 
+
 >Exploratory Data Analysis using Pyspark.\
 >Link to the repo:  [EDA_PySpark](https://github.com/pskaranth/EDA_PySpark)
 
@@ -12,12 +13,14 @@
 >Link to the repo:  [Transliteration](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Transliteration)\
 >Enoder-Decoder with Attention was better at performance.
 
->Using **RNN** as Sequence model for predicting Nationality based on names.\
+>Using RNN as Sequence model for predicting Nationality based on names.\
 >Link to the repo:  [RNN_NameToNationality](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Name2Nat)
 
->**K_nearest Neigbor** : Implementing KNearest Neighbor from scratch. \
+#### Basic implementation of algorithms:
+
+>K_nearest Neigbor : Implementing KNearest Neighbor from scratch. \
 >Link to the repo:  [KNN_MNIST](https://github.com/pskaranth/thelearningcurve/tree/master/Classification/KNN)
 
->**Generative Models** : Implemented generative models for classifying wheat kernels.\
+>Generative Models : Implemented generative models for classifying wheat kernels.\
 > Link to the repo: [Seed_Classification](https://github.com/pskaranth/thelearningcurve/tree/master/Classification/generative)
 
