@@ -13,7 +13,7 @@
 >Link to the repo:  [RNN_NameToNationality](https://github.com/pskaranth/thelearningcurve/tree/master/DeepLearning/RNN/Name2Nat)
 
 >Classification of Whale species based on the echo-location clicks emitted.\
->Link to the repo:  [Whales_Classifier](https://github.com/pskaranth/Whales_Classifier)
+>Link to the repo:  [Whales_Classifier](https://github.com/pskaranth/Whales_Classifier)\
 >Used XGBoost as a classifier in Pyspark.
 
 >Exploratory Data Analysis using **Pyspark**.\
