@@ -1,11 +1,14 @@
 
-Goal : Project to transliterate English to Hindi using Encoder-Decoder Attention Mechansim.
+**Task**
+
+Project to transliterate English to Hindi using Encoder-Decoder Attention Mechansim.
 Encoder and Decoder with attention seems to be better at reducing loss and thus better at transliterating English to Hindi words.
 Used GRU for Encoder and Decoder Models.
 
 
 
-About the Dataset
+**Dataset**
+
 https://www.microsoft.com/en-us/research/publication/report-of-news-2012-machine-transliteration-shared-task/
 
 ```
@@ -26,7 +29,10 @@ address = {Stroudsburg, PA, USA},
 }
 ```
 
-Used the modeling code for Encoder-Decoder model provided in DeepLearning - Padhai OneFourthLabs.
+**Reference**
+
+DeepLearning - Padhai OneFourthLabs.
+
 
 Issues faced:
 
