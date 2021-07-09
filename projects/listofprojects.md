@@ -20,7 +20,7 @@
 >Link to the repo:  [EDA_PySpark](https://github.com/pskaranth/EDA_PySpark)
 
 >Covid 19 data analysis and predicting cases using Linear, Polynomial, SVR regression models.\
->Link to the repo:  [Covid19-Analysis](https://github.com/pskaranth/covid19-analysis)
+>Link to the repo:  [Covid19-Analysis](https://github.com/pskaranth/covid19_analysis)
 
 #### Basic implementation of algorithms:
 
