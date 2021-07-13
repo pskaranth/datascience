@@ -36,8 +36,8 @@ Steps for setting K using Cross Validation:
 - For example : when  K=3 , in order to classify a new image; we find it’s three closest images in the training set and then return the most frequently occuring label.
 - Find the error estimate. Choose the value of  k that results in the lowest average error rate on these validation sets. That is how we find K in K nearest neighbour classification.
 
-For very high dimensional problems, Dimensionality Reduction is performed before apply KNN Algorithm because Euclidean distance ends up giving equal distances from the vector.
-Dimensionality reduction using PCA can prformed as a prior step.
+For very high dimensional problems, Dimensionality Reduction is performed before applying KNN Algorithm because Euclidean distance ends up giving equal distances from the vector.\
+Dimensionality reduction using PCA can performed as a prior step.
 
 ### Project
 - Identifying digits using MNIST data set - [KNN_MNIST](https://github.com/pskaranth/thelearningcurve/tree/master/Classification/KNN)
